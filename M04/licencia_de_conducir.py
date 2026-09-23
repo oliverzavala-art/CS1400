@@ -23,7 +23,7 @@ if edad <= 17:
 elif edad >= 18 and edad <= 70:
     lentes = input("Usas lentes? (s/n): ")
     if lentes.lower() == "s":
-        print("¡No puedes conducir sin tus lentes!")
+        print("¡Si puedes conducir pero tienes que usar tus lentes!")
     else:
         print("¡Puedes conducir! Pero recuerda siempre usar tus lentes si los necesitas.")
 elif edad > 70:
