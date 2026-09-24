@@ -36,4 +36,3 @@ elif edad > 70:
         print("¡Puedes conducir! Pero ten cuidado y mantén la atención en la carretera.")
 else:
     print("Edad no válida. Por favor ingresa una edad correcta.")
-    
