@@ -20,8 +20,9 @@ edad = int(input("¿Qué edad tienes? "))
 
 if edad <= 17:
  print("Eres menor de edad, aun no puedes conducir.")
- 
+
 elif edad >= 18 and edad <= 70:
+
     lentes = input("Usas lentes? (s/n): ")
     if lentes.lower() == "s":
         print("¡Si puedes conducir pero tienes que usar tus lentes!")
@@ -35,3 +36,4 @@ elif edad > 70:
         print("¡Puedes conducir! Pero ten cuidado y mantén la atención en la carretera.")
 else:
     print("Edad no válida. Por favor ingresa una edad correcta.")
+    
