@@ -1,5 +1,7 @@
 
 """
+NOMBRE: Oliver Zavala
+FECHA: 25/09/2026
 TODO
 Crea un programa interactivo que evalúe si una persona mayor de edad está en
 condiciones de conducir. Usa como referencia lo visto en la M3 Tarea de Sentencias.
