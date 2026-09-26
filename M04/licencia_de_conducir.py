@@ -18,28 +18,26 @@ Salida clara: Muestra un mensaje personalizado indicando si la persona puede
      (Ejemplo: "¿Olvidó los lentes en la cocina?")
 """
 
-try:
-    edad = int(input("¿Qué edad tienes? "))
-except ValueError:
-    edad = -1
+edad = int(input("¿Qué edad tienes? "))
 
-if edad < 0:
-    print("Edad no válida. Por favor, ingresa una edad correcta.")
-elif edad < 18:
-    print("Eres menor de edad, aún no puedes conducir.")
-elif edad <= 70:
+if edad <= 17:
+ print("Eres menor de edad, aun no puedes conducir.")
 
-    lentes = input("¿Usas lentes? (s/n): ")
+elif edad >= 18 and edad <= 70:
+
+    lentes = input("Usas lentes? (s/n): ")
     if lentes.lower() == "s":
         print("¡Si puedes conducir pero tienes que usar tus lentes!")
     else:
         print("¡Puedes conducir! Pero recuerda siempre usar tus lentes si los necesitas.")
-else:
+elif edad > 70:
     audifonos = input("¿Usas audífonos para escuchar? (s/n): ")
     if audifonos.lower() == "s":
         print("¡No olvides tus audífonos al manejar!.")
     else:
         print("¡Puedes conducir! Pero ten cuidado y mantén la atención en la carretera.")
+else:
+    print("Edad no válida. Por favor ingresa una edad correcta.")
 
 
 
