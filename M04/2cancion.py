@@ -16,17 +16,20 @@ cancion = input("Esta es Tu Linea favorita ")
 # TODO Tarea 2: Crear una variable booleana para verificar que la línea no esté vacía
 # Usa un operador de comparación (por ejemplo, verificar si el largo de la cadena es mayor a 0)
 
-es_valida = len(linea) > 0
+es_valida = len(linea.strip()) > 0
+
 
 # TODO Tarea 3: Usa una estructura if/else 
 # Si 'es_valida' es True, alinea el texto a la derecha con .rjust(80) e imprímelo.
 # De lo contrario, imprime un mensaje de error pidiendo que escriban algo.
-# if ____________:
-#     linea_alineada = linea.rjust(80)
-#     print(linea_alineada)
-# else:
-#     print("Error: No ingresaste ninguna línea.")
+if es_valida:
+    linea_alineada = linea.rjust(80)
+    print(linea_alineada)
+else:
+    print("Error: No ingresaste ninguna línea.")
 
 
 # TODO Reto: Agrega una condición adicional para verificar si la línea tiene más de 50 caracteres 
 # y muestra un mensaje diferente si es demasiado larga.
+if len(linea) > 50:
+    print("La línea es demasiado larga. Tiene más de 50 caracteres.")
