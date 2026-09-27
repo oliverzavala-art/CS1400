@@ -10,14 +10,13 @@ num = 4
 # TODO Tarea 1: Crear una variable para almacenar el cuadrado (debe ser el numero base multiplicado por sí mismo)
 
 cuadrado = num * num
-""""""
 # Mostrar el resultado con un f-string 
 print(f"El cuadrado de {num} es: {cuadrado}")
 
 # Salida esperada:
 # El cuadrado de 4 es: 16
 
-
+"""
 # TODO Tarea 2: Usa un operador de comparación para verificar si el número es positivo (mayor que 0).
 # Guarda el valor booleano (True o False) en una variable llamada 'es_positivo'.
 
