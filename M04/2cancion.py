@@ -1,5 +1,5 @@
 """
-NOMBRE: [Tu Nombre]
+NOMBRE: [Oliver Zavala]
 MODULO 4 - TAREA 2
 CANCION FAVORITA
 Uso de manipulación de cadenas, operadores de comparación y sentencias if/else.
