@@ -20,7 +20,7 @@ print(f"El cuadrado de {num} es: {cuadrado}")
 # Guarda el valor booleano (True o False) en una variable llamada 'es_positivo'.
 
 es_positivo = num > 0
-"""
+
 # TODO Tarea 3: Agrega una estructura if/else 
 # Si el número es positivo, imprime un mensaje diciendo que lo es. De lo contrario, imprime otro mensaje.
 
