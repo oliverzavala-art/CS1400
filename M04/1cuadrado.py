@@ -4,9 +4,9 @@ MODULO 4 - PROYECTO - TAREA 1
 Un programa para encontrar el cuadrado de un número y evaluar condiciones.
 """
 
+"""
 # Definir el número base - Hard Coded
-num = int(input("Ingrese un número: "))
-
+num = 4
 
 # TODO Tarea 1: Crear una variable para almacenar el cuadrado (debe ser el numero base multiplicado por sí mismo)
 
@@ -20,18 +20,23 @@ print(f"El cuadrado de {num} es: {cuadrado}")
 
 # TODO Tarea 2: Usa un operador de comparación para verificar si el número es positivo (mayor que 0).
 # Guarda el valor booleano (True o False) en una variable llamada 'es_positivo'.
-es_positivo = False  
+
 es_positivo = num > 0
 
-"""
 # TODO Tarea 3: Agrega una estructura if/else 
 # Si el número es positivo, imprime un mensaje diciendo que lo es. De lo contrario, imprime otro mensaje.
-# if ____________:
-#     print("El número es positivo.")
-# else:
-#     print("El número no es positivo.")
 
+if es_positivo:
+    print("El número es positivo.")
+else:
+    print("El número no es positivo.")
+"""
 
 # TODO Reto: Modifica la variable 'num' para que sea ingresado por el usuario usando la función input().
 # Recuerda convertir el valor ingresado a entero usando int().
-"""
+num = int(input("Ingresa un numero: "))
+          
+cuadrado = num * num
+print(f"El cuadrado de {num} es: {cuadrado}")
+
+      
