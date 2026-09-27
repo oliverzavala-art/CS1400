@@ -14,6 +14,7 @@ linea = input("Escribe una línea de tu canción favorita: ")
 # TODO Tarea 2: Crear una variable booleana para verificar que la línea no esté vacía
 # Usa un operador de comparación (por ejemplo, verificar si el largo de la cadena es mayor a 0)
 es_valida = False  # Reemplaza con tu código (ej: len(linea) > 0)
+cancion = input("linea favorita ")
 
 
 # TODO Tarea 3: Usa una estructura if/else 
