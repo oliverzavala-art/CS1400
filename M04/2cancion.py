@@ -9,7 +9,9 @@ Uso de manipulación de cadenas, operadores de comparación y sentencias if/else
 # Uno de ellos es .rjust(ancho), que alinea el texto a la derecha.
 
 # TODO Tarea 1: Pedir al usuario que escriba su línea favorita de una canción
+
 linea = input("Escribe una línea de tu canción favorita: ")
+cancion = imput("Linea favorita")
 
 # TODO Tarea 2: Crear una variable booleana para verificar que la línea no esté vacía
 # Usa un operador de comparación (por ejemplo, verificar si el largo de la cadena es mayor a 0)
