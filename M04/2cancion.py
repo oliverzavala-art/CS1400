@@ -10,26 +10,23 @@ Uso de manipulación de cadenas, operadores de comparación y sentencias if/else
 
 # TODO Tarea 1: Pedir al usuario que escriba su línea favorita de una canción
 
-linea = input("Escribe una línea de tu canción favorita: ")
+linea_favorita = input("Escribe una línea de tu canción favorita: ")
 
- 
 # TODO Tarea 2: Crear una variable booleana para verificar que la línea no esté vacía
 # Usa un operador de comparación (por ejemplo, verificar si el largo de la cadena es mayor a 0)
 
-es_valida = len(linea.strip(linea)) > 0
+es_valida = len(linea_favorita.strip()) > 0
 
-
-# TODO Tarea 3: Usa una estructura if/else 
+# TODO Tarea 3: Usa una estructura if/else
 # Si 'es_valida' es True, alinea el texto a la derecha con .rjust(80) e imprímelo.
 # De lo contrario, imprime un mensaje de error pidiendo que escriban algo.
 if es_valida:
-    linea_alineada = linea.rjust(80)
+    linea_alineada = linea_favorita.rjust(80)
     print(linea_alineada)
 else:
     print("Error: No ingresaste ninguna línea.")
 
-
-# TODO Reto: Agrega una condición adicional para verificar si la línea tiene más de 50 caracteres 
+# TODO Reto: Agrega una condición adicional para verificar si la línea tiene más de 50 caracteres
 # y muestra un mensaje diferente si es demasiado larga.
-if len(linea) > 50:
+if len(linea_favorita) > 50:
     print("La línea es demasiado larga. Tiene más de 50 caracteres.")
