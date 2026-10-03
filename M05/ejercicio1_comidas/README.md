@@ -25,4 +25,7 @@ Los tacos son típicos de México.
 #Programa de comidas de Latinoamérica
 #Autor : Oliver zavala
 
+
+#Mensaje de bienvenida y menú de opciones
 print ("Bienvenido al programa de com das de Latinoamérica.)
+print ("Opciones: tacos , pupusas, ceviche, arepas, asado).
