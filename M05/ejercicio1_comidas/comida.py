@@ -24,7 +24,18 @@ comida = comida.lower()
 # TODO #5:
 # Usa una estructura if / elif / else para verificar la comida elegida.
 # Imprime un mensaje con el país de origen para cada comida.
-
+if comida == "tacos":
+    print("Los tacos son típicos de México.")
+elif comida == "pupusas":
+    print("Las pupusas son típicas de El Salvador.")
+elif comida == "ceviche":
+    print("El ceviche es típico de Perú.")
+elif comida == "arepas":
+    print("Las arepas son típicas de Venezuela.")
+elif comida == "asado":
+    print("El asado es típico de Argentina.")
+else:
+    print("Comida no reconocida.")
 
 ## Ejemplo de salida esperada:
 """
