@@ -21,3 +21,8 @@ Bienvenido al programa de comidas de Latinoamérica.
 Opciones: tacos (y otras opciones)...
 ¿Sobre qué comida quieres conocer mas? Tacos
 Los tacos son típicos de México.
+
+#Programa de comidas de Latinoamérica
+#Autor : Oliver zavala
+
+print ("Bienvenido al programa de com das de Latinoamérica.)
