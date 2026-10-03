@@ -8,7 +8,7 @@
 4. Dentro del bucle, usa un condicional if/else para calcular y mostrar el área únicamente si el radio es mayor que 0.
 5. Reto de Iteración Continuada: Cambia la estructura a un bucle while que le pida al usuario radios continuamente con input() hasta que ingrese 'salir', calculando el área de cada radio válido o pidiendo el dato de nuevo si no es válido.
 
-NOMBRE: [Tu Nombre]
+NOMBRE: [Oliver Zavala]
 MÓDULO 5 - EJERCICIO 2 (Adaptada)
 ÁREA DE CÍRCULOS E ITERACIONES
 Uso de bucles (for / while), listas, validación y estructuras de control.
@@ -22,12 +22,15 @@ Uso de bucles (for / while), listas, validación y estructuras de control.
 radios = [5, 12, -3, 8, 0]
 
 print("--- Procesando lista de radios ---")
-
+"""
 # TODO Tarea 1: Crea un bucle 'for' que recorra la lista 'radios' mira las palabras claves mas adelante para evitar errores.
-#
+#creando un bucle for para recorrer la lista de radios
 
+for radio in radios:
+        
     # TODO Tarea 2: Verifica con if/else si el radio es válido (mayor a 0).
-    #
+    #creando un condicional if/else para validar si el radio es mayor a 0
+    if radio > 0:
         area = math.pi * (radio ** 2)
         print(f"Radio: {radio} -> Área: {area:.2f}")
     else:
