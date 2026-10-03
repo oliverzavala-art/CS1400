@@ -27,5 +27,5 @@ Los tacos son típicos de México.
 
 
 #Mensaje de bienvenida y menú de opciones
-print ("Bienvenido al programa de com das de Latinoamérica.)
+print ("Bienvenido al programa de comidas de Latinoamérica.) 
 print ("Opciones: tacos , pupusas, ceviche, arepas, asado).
