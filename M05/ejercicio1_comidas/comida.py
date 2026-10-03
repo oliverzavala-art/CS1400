@@ -35,8 +35,7 @@ elif comida == "arepas":
 elif comida == "asado":
     print("El asado es típico de Argentina.")
 else:
-    print("Comida no reconocida.")
-
+    print("Esa opción no está en la lista. Intenta de nuevo.")
 ## Ejemplo de salida esperada:
 """
 Bienvenido al programa de comidas de Latinoamérica.
