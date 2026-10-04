@@ -105,10 +105,21 @@ print("Total de dígitos numéricos encontrados:", contador_numeros)
 
 # 20. Observa la condición del if. Explica cómo evalúa Python si un carácter individual es un dígito numérico usando los operadores >= y <=.
 # Respuesta: Python compara el valor ASCII del carácter con los valores ASCII de "0" y "9". Si el valor ASCII del carácter está entre estos dos, se considera un dígito numérico.
-"""
+
 # 21. Método .rfind('a'):
+#Respuesta: El método .rfind('a') devuelve la posición de la última aparición de 'a' en la cadena.
 texto = "banana"
 print("Última posición de 'a' en 'banana':", texto.rfind('a'))
 
-# 22. Método .find('a'):
-print("Primera posición de 'a' en 'banana':", texto.find('a'))  
+# 22. Método .isalpha():
+
+#Respuesta: El método .isalpha() devuelve True si todos los caracteres de la cadena son letras, de lo contrario devuelve False.
+print("¿'abc'.isalpha()?:", "abc".isalpha())
+print("¿'abc123'.isalpha()?:", "abc123".isalpha())  
+"""
+# 23. Método .isdigit():
+#Respuesta: El método .isdigit() devuelve True si todos los caracteres de la cadena son dígitos numéricos, de lo contrario devuelve False.
+print("¿'12345'.isdigit()?:", "12345".isdigit())
+print("¿'abc123'.isdigit()?:", "abc123".isdigit()) 
+ 
+
