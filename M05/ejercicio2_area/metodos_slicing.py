@@ -9,3 +9,8 @@ for i in range(num, 0, -1):
 
 # 2. ¿Por qué es necesario que el parámetro step (paso) sea un número negativo al realizar un conteo descendente?
 # Respuesta : El parámetro step  (paso)debe ser negativo para que el conteo disminuya en lugar de aumentar.
+
+# 3. ¿Por qué el valor final se configuró en 0 si queríamos que el conteo se detuviera en el número 1?
+# Respuesta : El valor final se configuró en 0 porque en Python no seincluye el valor final. 
+# Por eso , para que el conteo se detuviera en 1 , se debe poner 0 como valor final.
+
