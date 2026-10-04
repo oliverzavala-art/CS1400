@@ -1,8 +1,8 @@
 
-
+"""
 # Conteo descendente
 num = int(input("Introduce el número inicial: "))
-"""
+
 for i in range(num, 0, -1):
     print("Conteo:", i) 
 
@@ -20,7 +20,7 @@ for i in range(num, 0, -1):
 for i in range(num, -1, -2):
     print("Conteo:", i) 
 # Respuesta : range(num, -1, -2)
-"""
+
 import math
 
 decNum = -34.5678
@@ -45,3 +45,22 @@ print( math.sqrt(intNum) )   # Línea F
 # 9. ¿Resultado de la Línea E math.pow(intNum, 2)?  81 Respuesta: Calcula intNum (9) elevado a la potencia de 2.
 
 # 10. ¿Resultado de la Línea F math.sqrt(intNum)? 3.0 Respuesta: Calcula la raíz cuadrada de intNum (9 ).
+"""
+miMax = max("Banano", "manzana", "Zanahoria")
+print("El máximo es:", miMax)
+
+# 11. Antes de ejecutar: ¿Cuál crees que será el resultado devuelto por max()?
+
+#Predicción: "Zanahoria"
+# 12. Ejecuta el código. ¿Cuál fue el resultado real devuelto?
+
+#Resultado: "manzana"
+
+# 13. Sabiendo que en la tabla ASCII las mayúsculas tienen valores numéricos menores que las minúsculas, explica por qué "manzana" fue seleccionada como la mayor frente a "Zanahoria".
+
+# 14. Cambia la función de max() a min(). ¿Qué valor obtienes ahora y por qué?
+miMin = min("Banano", "manzana", "Zanahoria")
+print("El mínimo es:", miMin)
+
+#Resultado: "Banano"
+#Explicación: "Banano" es el mínimo porque en la tabla ASCII las mayúsculas tienen valores numéricos menores que las minúsculas.
