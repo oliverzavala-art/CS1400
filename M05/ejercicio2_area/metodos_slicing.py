@@ -14,3 +14,5 @@ for i in range(num, 0, -1):
 # Respuesta : El valor final se configuró en 0 porque en Python no seincluye el valor final. 
 # Por eso , para que el conteo se detuviera en 1 , se debe poner 0 como valor final.
 
+# 4. Modifica el código para que cuente hacia atrás de 2 en 2, comenzando desde el número elegido por el usuario y deteniéndose exactamente en el 0 (inclusive). Escribe la línea de tu range() modificada:
+# Respuesta : range(num, -1, -2)
