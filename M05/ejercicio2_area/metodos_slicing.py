@@ -34,14 +34,14 @@ print( abs(decNum) )        # Línea D
 print( math.pow(intNum, 2) ) # Línea E
 print( math.sqrt(intNum) )   # Línea F
 
-# 5. ¿Resultado de la Línea A round(decNum, 2)? _________
+# 5. ¿Resultado de la Línea A round(decNum, 2)? -34.57 Respuesta: Redondea a los primeros 2 decimales.
 
-# 6. ¿Resultado de la Línea B round(decNum, 0)? _________
+# 6. ¿Resultado de la Línea B round(decNum, 0)?  -35 Respuesta: Redondea a 0 decimales.
 
-# 7. ¿Resultado de la Línea C int(decNum)? _________ (Pista: ¿Redondea o trunca los decimales?)
+# 7. ¿Resultado de la Línea C int(decNum)? -34  (Pista: ¿Redondea o trunca los decimales?) respuesta: Trunca los decimales.
 
-# 8. ¿Resultado de la Línea D abs(decNum)? _________
+# 8. ¿Resultado de la Línea D abs(decNum)? 34.5678 Respuesta: Devuelve el valor absoluto.
 
-# 9. ¿Resultado de la Línea E math.pow(intNum, 2)? _________
+# 9. ¿Resultado de la Línea E math.pow(intNum, 2)?  81 Respuesta: Calcula intNum elevado a la potencia de 2.
 
-# 10. ¿Resultado de la Línea F math.sqrt(intNum)? _________
+# 10. ¿Resultado de la Línea F math.sqrt(intNum)? 3.0 Respuesta: Calcula la raíz cuadrada de intNum.
