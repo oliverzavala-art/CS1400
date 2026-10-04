@@ -64,3 +64,14 @@ print("El mínimo es:", miMin)
 
 #Resultado: "Banano"
 #Explicación: "Banano" es el mínimo porque en la tabla ASCII las mayúsculas tienen valores numéricos menores que las minúsculas.
+
+import math
+
+d = int(input("Ingresa la longitud de la huella de frenado (en metros): "))
+
+# Completa la ecuación usando math.sqrt():
+v = math.sqrt(2 * 9.8 * d)
+print("Velocidad estimada del auto:", round(v, 2), "km/h")  
+
+# 15. Completa la asignación v = en el código superior utilizando la función math.sqrt() y la fórmula entregada. Escribe la línea completa a continuación:
+#Respuesta: v = math.sqrt(2 * 9.8 * d)
