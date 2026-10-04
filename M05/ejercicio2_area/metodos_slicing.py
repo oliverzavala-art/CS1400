@@ -33,3 +33,15 @@ print( abs(decNum) )        # Línea D
 
 print( math.pow(intNum, 2) ) # Línea E
 print( math.sqrt(intNum) )   # Línea F
+
+# 5. ¿Resultado de la Línea A round(decNum, 2)? _________
+
+# 6. ¿Resultado de la Línea B round(decNum, 0)? _________
+
+# 7. ¿Resultado de la Línea C int(decNum)? _________ (Pista: ¿Redondea o trunca los decimales?)
+
+# 8. ¿Resultado de la Línea D abs(decNum)? _________
+
+# 9. ¿Resultado de la Línea E math.pow(intNum, 2)? _________
+
+# 10. ¿Resultado de la Línea F math.sqrt(intNum)? _________
