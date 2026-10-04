@@ -19,10 +19,13 @@ Uso de bucles (for / while), listas, validación y estructuras de control.
 
 # --- PARTE 1: Iteración sobre una lista de datos (FOR Loop) ---
 
+import math
+
+
 radios = [5, 12, -3, 8, 0]
 
 print("--- Procesando lista de radios ---")
-"""
+
 # TODO Tarea 1: Crea un bucle 'for' que recorra la lista 'radios' mira las palabras claves mas adelante para evitar errores.
 #creando un bucle for para recorrer la lista de radios
 
@@ -30,6 +33,7 @@ for radio in radios:
         
     # TODO Tarea 2: Verifica con if/else si el radio es válido (mayor a 0).
     #creando un condicional if/else para validar si el radio es mayor a 0
+    
     if radio > 0:
         area = math.pi * (radio ** 2)
         print(f"Radio: {radio} -> Área: {area:.2f}")
@@ -44,27 +48,31 @@ print("\n--- Modo Interactivo (Escribe 'salir' para terminar) ---")
 # TODO Reto: Completa el while loop para solicitar radios al usuario indefinidamente.
 # Debe repetirse hasta que el usuario escriba 'salir'.
 
-# while True:
-    # variable A
-    #
+while True:
+    # variable A: Solicitar entrada del usuario
+    entrada = input("Ingresa un radio o escribe 'salir' para terminar: ")
 
     # if sentence si A es igual a algo para salir
-    #entonces imprimir mensage de finalizacion
-    # aqui un break
-    # break  # Interrumpe la iteración
+    if entrada.lower() == 'salir':
+        # entonces imprimir mensage de finalizacion
+        print("¡Hasta luego! Programa finalizado.")
+        # aqui un break
+        break  # Interrumpe la iteración
     
-#   try:
-       # otro variable B cambiar variable A a flotante
-        #
+    try:
+        # otro variable B cambiar variable A a flotante
+        radio_usuario = float(entrada)
         
         # Validar si es positivo mediante iteración/condición
-        #if variable B > 0:  # para evitar errores de matematica
-            #entonces la matematica se hace igual que en la Parte 1
-            # area = math.pi * (radio_usuario ** 2)
-            #print(f"El área del círculo es: {area:.2f}\n")
-        #else:
+        if radio_usuario > 0:  # para evitar errores de matematica
+            # entonces la matematica se hace igual que en la Parte 1
+            area = math.pi * (radio_usuario ** 2)
+            print(f"El área del círculo es: {area:.2f}\n")
+        else:
             # print un mesage de error que deplano no fue un numero mayor a 0
+            print("Error: El radio debe ser un número mayor que cero.\n")
 
-     # Otra manera de encontrar errores del usuario. Descomenta las siguientes lineas al finalizar tu while loop.       
-    #except ValueError:
-     #   print("Error: Por favor ingresa un número válido o la palabra 'salir'.\n")
+    # Otra manera de encontrar errores del usuario. Descomenta las siguientes lineas al finalizar tu while loop.       
+    except ValueError:
+        print("Error: Por favor ingresa un número válido o la palabra 'salir'.\n")
+     """
