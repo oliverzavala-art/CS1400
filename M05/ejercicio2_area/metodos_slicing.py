@@ -74,7 +74,7 @@ print("Velocidad estimada del auto:", round(v, 2), "km/h")
 
 # 15. Completa la asignación v = en el código superior utilizando la función math.sqrt() y la fórmula entregada. Escribe la línea completa a continuación:
 #Respuesta: v = math.sqrt(2 * 9.8 * d)
-"""
+
 nombre = "Building Puentes"
 
 print("Índice 0:", nombre[0])
@@ -83,3 +83,9 @@ print("Segmento:", nombre[8:15])
 # 16. ¿Qué carácter imprime exactamente nombre[0]? Respuesta: "B"
 
 # 17. ¿En qué posición (índice) exacta se encuentra el espacio en blanco entre ambas palabras? Respuesta: 8
+"""
+# 18. Modifica los índices en nombre[X:Y] para extraer e imprimir exactamente la palabra "Puentes".
+print("Palabra 'Puentes':", nombre[9:15])
+print("Palabra 'Puentes' (límite implícito):", nombre[9:])
+#Opción con 2 valores: nombre[9:15]
+#Opción con límite implícito: nombre[9:]
