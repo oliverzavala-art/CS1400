@@ -33,7 +33,7 @@ for radio in radios:
         
     # TODO Tarea 2: Verifica con if/else si el radio es válido (mayor a 0).
     #creando un condicional if/else para validar si el radio es mayor a 0
-    
+
     if radio > 0:
         area = math.pi * (radio ** 2)
         print(f"Radio: {radio} -> Área: {area:.2f}")
@@ -75,4 +75,4 @@ while True:
     # Otra manera de encontrar errores del usuario. Descomenta las siguientes lineas al finalizar tu while loop.       
     except ValueError:
         print("Error: Por favor ingresa un número válido o la palabra 'salir'.\n")
-     """
+    
