@@ -45,7 +45,6 @@ print( math.sqrt(intNum) )   # Línea F
 # 9. ¿Resultado de la Línea E math.pow(intNum, 2)?  81 Respuesta: Calcula intNum (9) elevado a la potencia de 2.
 
 # 10. ¿Resultado de la Línea F math.sqrt(intNum)? 3.0 Respuesta: Calcula la raíz cuadrada de intNum (9 ).
-"""
 miMax = max("Banano", "manzana", "Zanahoria")
 print("El máximo es:", miMax)
 
@@ -75,3 +74,12 @@ print("Velocidad estimada del auto:", round(v, 2), "km/h")
 
 # 15. Completa la asignación v = en el código superior utilizando la función math.sqrt() y la fórmula entregada. Escribe la línea completa a continuación:
 #Respuesta: v = math.sqrt(2 * 9.8 * d)
+"""
+nombre = "Building Puentes"
+
+print("Índice 0:", nombre[0])
+print("Segmento:", nombre[8:15])
+
+# 16. ¿Qué carácter imprime exactamente nombre[0]? Respuesta: "B"
+
+# 17. ¿En qué posición (índice) exacta se encuentra el espacio en blanco entre ambas palabras? Respuesta: 8
