@@ -83,7 +83,7 @@ print("Segmento:", nombre[8:15])
 # 16. ¿Qué carácter imprime exactamente nombre[0]? Respuesta: "B"
 
 # 17. ¿En qué posición (índice) exacta se encuentra el espacio en blanco entre ambas palabras? Respuesta: 8
-"""
+
 # 18. Modifica los índices en nombre[X:Y] para extraer e imprimir exactamente la palabra "Puentes".
 nombre = "Building Puentes "
 
@@ -91,3 +91,24 @@ nombre = "Building Puentes "
 #Opción con límite implícito: nombre[9:]
 print("Palabra 'Puentes':", nombre[9:15])
 print("Palabra 'Puentes' (límite implícito):", nombre[9:])
+
+texto = input("Ingresa una frase con letras y números: ")
+contador_numeros = 0
+
+for caracter in texto:
+    if caracter >= "0" and caracter <= "9":
+        contador_numeros += 1
+
+print("Total de dígitos numéricos encontrados:", contador_numeros)
+
+# 19. Ejecuta el programa e ingresa el texto "3 tigres en 2 árboles". ¿Qué valor imprime contador_numeros? Respuesta: 2
+
+# 20. Observa la condición del if. Explica cómo evalúa Python si un carácter individual es un dígito numérico usando los operadores >= y <=.
+# Respuesta: Python compara el valor ASCII del carácter con los valores ASCII de "0" y "9". Si el valor ASCII del carácter está entre estos dos, se considera un dígito numérico.
+"""
+# 21. Método .rfind('a'):
+texto = "banana"
+print("Última posición de 'a' en 'banana':", texto.rfind('a'))
+
+# 22. Método .find('a'):
+print("Primera posición de 'a' en 'banana':", texto.find('a'))  
