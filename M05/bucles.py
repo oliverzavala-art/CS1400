@@ -2,7 +2,7 @@
 #Sección 1: ¿Por qué usar un Bucle? (Repetición Manual vs. Iteración)
 #Analiza el siguiente código para comprender la necesidad de los bucles.
 #Código 1:
-
+"""
 #Python
 # Impresión manual repetitiva
 print("Hola, estudiante")
@@ -67,6 +67,57 @@ while respuesta == "si":
 # El programa entrará en un bucle infinito, ya que la condición del while nunca cambiará y el bloque dentro del while se ejecutará repetidamente sin fin.
 
 # 7. Investiga qué combinación de teclas se utiliza en la terminal para detener un bucle infinito en ejecución (Ctrl+C u otra). Escríbela.
+# La combinación de teclas utilizada en la terminal para detener un bucle infinito en ejecución es Ctrl+C (o Cmd + C en macOS )
+
+#Sección 3: Bucle for y la Función range() (Iteración Definida)
+#Usamos for cuando queremos iterar sobre un número conocido de repeticiones o sobre una secuencia.
+
+# Codigo 3:
+
+#Python
+# Ejemplo de range() simple
+num = int(input("Introduce un número límite: "))
+
+for i in range(10):
+    print("Iteración:", i)
+
+#Análisis:
+# 8. Ejecuta el programa e ingresa el valor 10. ¿Cuántas veces se imprimió la palabra "Iteración"? ¿Influyó en algo el número ingresado por teclado en este primer intento?
+# La palabra "Iteración" se imprimió 10 veces, ya que el bucle for se ejecuta 10 veces (de 0 a 9). El número ingresado por teclado no se ejecutó en este primer intento.
+
+# 9. Observa la salida numéricas de i. ¿Cuál es el valor inicial y cuál es el valor final impreso?
+# El valor inicial de i es 0 y el valor final  es 9.
+
+## 10. ¿Se llegó a imprimir el número 10 en la consola? Explica por qué Python excluye el límite superior en range().
+# No, el número 10 no se imprimió en la consola. Python excluye el límite superior en range() porque la función genera una secuencia de números que comienza desde 0 y termina justo antes del número especificado.
+"""
+# 11. Cambia range(10) por range(0, 10). ¿Existe alguna diferencia en el resultado obtenido?
+#python
+num = int(input("Introduce un número límite: "))
+for i in range(0, 10):
+    print("Iteración:", i)
+
+# La salida será la misma que con range(10), ya que range(0, 10) genera los mismos números de 0 a 9.
+
+#Modificación 2A (Rango con Variable Límite):
+#Cambia la línea del rango para usar la variable num: range(1, num).
+
+for i in range(1, num):
+    print("Iteración:", i)
+
+# 12. Ejecuta e ingresa 20. ¿El conteo se detuvo en 20 o en 19?
+# El conteo se detuvo en 19.
+
+# 13. ¿Qué ajuste matemático debes hacer dentro de range() para que la cuenta incluya exactamente el número ingresado por el usuario?
+#Respuesta: range(1, num + 1)
+for i in range(1, num + 1):
+    print("Iteración:", i)  
+
+#Modificación 2B (Uso del Argumento Step / Paso):
+# Modifica la línea a: range(2, 11, 2)
+
+
+
 
 
 
