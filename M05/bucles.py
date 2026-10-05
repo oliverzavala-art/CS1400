@@ -144,6 +144,15 @@ for fruta in frutas:
 
 #Análisis:
 
-## 15. En el primer bucle for letra in palabra:, ¿qué representa la variable letra en cada paso del bucle?
+# 15. En el primer bucle for letra in palabra:, ¿qué representa la variable letra en cada paso del bucle?
+# La variable letra representa cada carácter individual de la palabra "Python".
 
+## 16. En el segundo bucle for fruta in frutas:, contrasta la iteración directa (for fruta in frutas:) con el acceso por índices (for i in range(len(frutas)):). ¿Cuál de las dos opciones resulta más legible para un principiante y por qué?
+# La iteración directa (for fruta in frutas:) es más legible para un principiante, ya que permite acceder directamente a cada elemento de la lista sin necesidad de manejar índices manualmente.
+
+#Sección 5: Sentencias de Control de Bucles (break y continue)
+#Podemos alterar el flujo normal de un bucle mediante instrucciones de control.
+
+#Codigo 5
+# Python
 
