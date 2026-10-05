@@ -183,7 +183,7 @@ for num in range(1, 6):
         break
     print("Clave incorrecta, inténtelo de nuevo.")
 print("Acceso concedido.")
-"""
+
 #Sección 6: Patrones de Acumulación y Conteo
 
 #Un patrón común en programación consiste en acumular valores o contar ocurrencias a medida que iteramos.
@@ -215,4 +215,29 @@ print("Cantidad de números mayores a 5:", mayores_a_cinco)
 # 21. Explica con tus palabras la diferencia entre un acumulador (suma_total += num) y un contador (mayores_a_cinco += 1).
 # Un acumulador (suma_total += num) acumula todos los valores que se encuentran en el bucle.
 #  Y un contador (mayores_a_cinco += 1) solo incrementa su valor cuando se cumple una condición específica.
+
+#Sección 7: Normalización de Textos con .lower()
+
+#Código 7
+
+#Python
+sujeto1 = "Python"
+sujeto2 = "python"
+
+if sujeto1 == sujeto2:
+    print("Iguales")
+else:
+    print("Diferentes")
+"""
+#Análisis:
+# 22. Observa las variables sujeto1 y sujeto2. ¿Cuál es la diferencia visual entre ambos textos y cuál es el resultado de la comparación inicial?
+# La diferencia visual de sujeto1 y sugeto 2 es que  tiene la primera letra en mayúscula y sujeto2 está en minúscula.
+
+# 23. Modifica la condición a if sujeto1.lower() == sujeto2.lower():. Ejecuta el código nuevamente. ¿Qué resultado obtienes y qué transformación realiza el método .lower()
+
+if sujeto1.lower() == sujeto2.lower():
+    print("Iguales")
+else:
+    print("Diferentes")
+
 
