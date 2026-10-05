@@ -115,8 +115,13 @@ for i in range(1, num + 1):
 
 #Modificación 2B (Uso del Argumento Step / Paso):
 # Modifica la línea a: range(2, 11, 2)
+ #Python
+for i in range(2, 11, 2):
+    print("Iteración:", i)
 
-
+## 14. Ejecuta el programa. ¿Qué valores se imprimieron y qué función cumple el tercer argumento dentro de range(inicio, fin, paso)?
+# Los valores imprimidos son 2, 4, 6, 8 y 10.
+# El tercer argumento dentro de range(inicio, fin, paso) especifica el incremento entre cada número consecutivo. En este caso, el paso es 2, por lo que los números se imprimen con un incremento de 2.
 
 
 
