@@ -53,7 +53,20 @@ print("Programa finalizado.")
 # 4. Ejecuta el programa e ingresa "si" varias veces consecutivas. ¿Cómo cambia el comportamiento respecto al if?
 # Con el while, el programa seguirá preguntando y ejecutando el bloque tantas veces como el usuario ingrese "si", a diferencia del if que solo lo hace una vez.
 
-
 # 5. ¿Es posible saber con exactitud de antemano cuántas veces el usuario escribirá "si" antes de ejecutar el programa?
-# Sí, es posible saber con exactitud de antemano cuántas veces el usuario escribirá "si" antes de ejecutar el programa.
+# no, porque la cantidad de veces que el usuario escribe "si" depende de su decisión en tiempo de ejecución.
+
+#Modificación 1B (Bucle Infinito):
+#Comenta la línea respuesta = input(...) que está dentro del bloque while. Ejecuta el programa e introduce "si".
+#Python
+respuesta = input("¿Deseas repetir el proceso? (si/no): ")
+while respuesta == "si":
+    print("Ejecutando el bloque...")
+
+# 6. ¿Qué le sucede al programa cuando no se actualiza la variable de control dentro del while?
+# El programa entrará en un bucle infinito, ya que la condición del while nunca cambiará y el bloque dentro del while se ejecutará repetidamente sin fin.
+
+# 7. Investiga qué combinación de teclas se utiliza en la terminal para detener un bucle infinito en ejecución (Ctrl+C u otra). Escríbela.
+
+
 
