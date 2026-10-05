@@ -235,9 +235,15 @@ else:
 
 # 23. Modifica la condición a if sujeto1.lower() == sujeto2.lower():. Ejecuta el código nuevamente. ¿Qué resultado obtienes y qué transformación realiza el método .lower()
 
+sujeto1 = "Python"
+sujeto2 = "python"
 if sujeto1.lower() == sujeto2.lower():
     print("Iguales")
 else:
     print("Diferentes")
+
+# 24. ¿Por qué es útil aplicar .lower() a las respuestas del usuario cuando trabajamos con entradas dentro de un bucle while (por ejemplo, al validar "SI", "Si" o "si")?
+# Al aplicar .lower() a las respuestas del usuario permite normalizar el texto a minúsculas, lo que facilita la comparación y evita errores debidos a la diferencia entre mayúsculas y minúsculas. 
+
 
 
