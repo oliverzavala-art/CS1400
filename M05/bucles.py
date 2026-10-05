@@ -182,6 +182,8 @@ for num in range(1, 6):
     if clave == "clave_correcta":
         break
     print("Clave incorrecta, inténtelo de nuevo.")
+print("Acceso concedido.")
+
 #Sección 6: Patrones de Acumulación y Conteo
 
 #Un patrón común en programación consiste en acumular valores o contar ocurrencias a medida que iteramos.
