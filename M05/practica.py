@@ -1,5 +1,5 @@
 #### Ejemplo 1
-
+"""
 num = int(input("Introduce un número entre 10 y 20: "))
 print("Contando hacia arriba")
 for i in range(0, num, 1):
@@ -9,7 +9,7 @@ for i in range(num, 0, -1):
     print(i)
 
     #### Ejemplo 2
-"""
+
     num = int(input("Introduce un número positivo o negativo (0 para salir): "))
 
 negativos = 0
@@ -36,3 +36,7 @@ print("Total negativos:", negativos)
 
 print("Total positivos:", positivos)
 """
+spam = 0
+while spam < 5:
+    print('Hello, world.')
+    spam = spam + 1
