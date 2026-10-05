@@ -90,7 +90,7 @@ for i in range(10):
 
 ## 10. ¿Se llegó a imprimir el número 10 en la consola? Explica por qué Python excluye el límite superior en range().
 # No, el número 10 no se imprimió en la consola. Python excluye el límite superior en range() porque la función genera una secuencia de números que comienza desde 0 y termina justo antes del número especificado.
-"""
+
 # 11. Cambia range(10) por range(0, 10). ¿Existe alguna diferencia en el resultado obtenido?
 #python
 num = int(input("Introduce un número límite: "))
@@ -123,6 +123,27 @@ for i in range(2, 11, 2):
 # Los valores imprimidos son 2, 4, 6, 8 y 10.
 # El tercer argumento dentro de range(inicio, fin, paso) especifica el incremento entre cada número consecutivo. En este caso, el paso es 2, por lo que los números se imprimen con un incremento de 2.
 
+#Sección 4: Iteración sobre Secuencias (Cadenas y Listas)
+#Un bucle for permite iterar directamente sobre los elementos de una colección sin necesidad de usar contadores manualmente.
+"""
+#código 4: 
+# Python
+# Iteración sobre una cadena de texto
+palabra = "Python"
 
+print("--- Letras de la palabra ---")
+for letra in palabra:
+    print(letra)
+
+   # Iteración sobre una lista
+frutas = ["manzana", "banana", "cereza"]
+
+print("--- Lista de frutas ---")
+for fruta in frutas:
+    print(fruta) 
+
+#Análisis:
+
+## 15. En el primer bucle for letra in palabra:, ¿qué representa la variable letra en cada paso del bucle?
 
 
