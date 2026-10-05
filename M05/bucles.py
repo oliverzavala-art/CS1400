@@ -125,7 +125,7 @@ for i in range(2, 11, 2):
 
 #Sección 4: Iteración sobre Secuencias (Cadenas y Listas)
 #Un bucle for permite iterar directamente sobre los elementos de una colección sin necesidad de usar contadores manualmente.
-"""
+
 #código 4: 
 # Python
 # Iteración sobre una cadena de texto
@@ -146,13 +146,14 @@ for fruta in frutas:
 
 # 15. En el primer bucle for letra in palabra:, ¿qué representa la variable letra en cada paso del bucle?
 # La variable letra representa cada carácter individual de la palabra "Python".
+# En el segundo bucle for fruta in frutas:, la variable fruta representa cada elemento de la lista "frutas" en cada paso del bucle.
 
 ## 16. En el segundo bucle for fruta in frutas:, contrasta la iteración directa (for fruta in frutas:) con el acceso por índices (for i in range(len(frutas)):). ¿Cuál de las dos opciones resulta más legible para un principiante y por qué?
 # La iteración directa (for fruta in frutas:) es más legible para un principiante, ya que permite acceder directamente a cada elemento de la lista sin necesidad de manejar índices manualmente.
 
 #Sección 5: Sentencias de Control de Bucles (break y continue)
 #Podemos alterar el flujo normal de un bucle mediante instrucciones de control.
-
+"""
 #Codigo 5
 # Python
 # Uso de break y continue
@@ -173,13 +174,14 @@ for num in range(1, 6):
 # El número 3 falta en la secuencia impresa porque la instrucción continue hace que el bucle salte a la siguiente iteración sin ejecutar el resto del código.
 
 ## 18. Observa la salida de la Demostración de break. ¿Qué números se imprimieron y qué hace la instrucción break al ejecutarse?
-# Los números impresos son 1 y 2. La instrucción break termina la ejecución del bucle por completo, sin procesar los restantes.
+# Los números impresos son 1 y 2. La instrucción break termina la ejecución del bucle por completo, sin procesar el resto.
 
 # 19. Supón que construyes un bucle while True: para solicitar claves de acceso. ¿Qué sentencia te permitiría salir del bucle una vez que el usuario ingrese la clave correcta?
 
     clave = input("Ingrese la clave de acceso: ")
     if clave == "clave_correcta":
         break
+    print("Clave incorrecta, inténtelo de nuevo.")
 #Sección 6: Patrones de Acumulación y Conteo
 
 #Un patrón común en programación consiste en acumular valores o contar ocurrencias a medida que iteramos.
@@ -212,6 +214,6 @@ print("Suma total:", suma_total)
 print("Cantidad de números mayores a 5:", mayores_a_cinco)
 
 #   Análisis:
-## 20. ¿Con qué valor deben inicializarse las variables suma_total y mayores_a_cinco antes de comenzar el bucle? ¿Qué pasaría si las inicializas dentro del bucle?
+# 20. ¿Con qué valor deben inicializarse las variables suma_total y mayores_a_cinco antes de comenzar el bucle? ¿Qué pasaría si las inicializas dentro del bucle?
 # Las variables suma_total y mayores_a_cinco deben inicializarse en 0 antes de comenzar el bucle. Si se inicializan dentro del bucle, cada iteración reiniciará los valores, 
 # lo que provocará que la suma y el contador no acumulen correctamente los valores.
