@@ -153,7 +153,7 @@ for fruta in frutas:
 
 #Sección 5: Sentencias de Control de Bucles (break y continue)
 #Podemos alterar el flujo normal de un bucle mediante instrucciones de control.
-"""
+
 #Codigo 5
 # Python
 # Uso de break y continue
@@ -183,12 +183,15 @@ for num in range(1, 6):
         break
     print("Clave incorrecta, inténtelo de nuevo.")
 print("Acceso concedido.")
-
+"""
 #Sección 6: Patrones de Acumulación y Conteo
 
 #Un patrón común en programación consiste en acumular valores o contar ocurrencias a medida que iteramos.
+
 #codigo 6
+
  # Python
+
  # Acumulador de suma y contador de coincidencias
 numeros = [4, 7, 2, 9, 10, 5]
 suma_total = 0
@@ -202,20 +205,14 @@ for num in numeros:
 print("Suma total:", suma_total)
 print("Cantidad de números mayores a 5:", mayores_a_cinco)
 
-# Acumulador de suma y contador de coincidencias
-numeros = [4, 7, 2, 9, 10, 5]
-suma_total = 0
-mayores_a_cinco = 0
-
-for num in numeros:
-    suma_total += num  # Acumula la suma
-    if num > 5:
-        mayores_a_cinco += 1  # Incrementa el contador
-
-print("Suma total:", suma_total)
-print("Cantidad de números mayores a 5:", mayores_a_cinco)
-
 #   Análisis:
+
 # 20. ¿Con qué valor deben inicializarse las variables suma_total y mayores_a_cinco antes de comenzar el bucle? ¿Qué pasaría si las inicializas dentro del bucle?
-# Las variables suma_total y mayores_a_cinco deben inicializarse en 0 antes de comenzar el bucle. Si se inicializan dentro del bucle, cada iteración reiniciará los valores, 
-# lo que provocará que la suma y el contador no acumulen correctamente los valores.
+
+# Las variables suma_total y mayores_a_cinco deben inicializarse en 0 antes de comenzar el bucle.
+#  Si se inicializan dentro del bucle, cada iteración reiniciará los valores,  lo que provocará que la suma y el contador no acumulen correctamente los valores.
+
+# 21. Explica con tus palabras la diferencia entre un acumulador (suma_total += num) y un contador (mayores_a_cinco += 1).
+# Un acumulador (suma_total += num) acumula todos los valores que se encuentran en el bucle.
+#  Y un contador (mayores_a_cinco += 1) solo incrementa su valor cuando se cumple una condición específica.
+
