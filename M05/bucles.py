@@ -51,7 +51,7 @@ while respuesta == "si":
 
 print("Programa finalizado.")
 # 4. Ejecuta el programa e ingresa "si" varias veces consecutivas. ¿Cómo cambia el comportamiento respecto al if?
-
+# Con el while, el programa seguirá preguntando y ejecutando el bloque tantas veces como el usuario ingrese "si", a diferencia del if que solo lo hace una vez.
 
 
 # 5. ¿Es posible saber con exactitud de antemano cuántas veces el usuario escribirá "si" antes de ejecutar el programa?
