@@ -155,4 +155,63 @@ for fruta in frutas:
 
 #Codigo 5
 # Python
+# Uso de break y continue
+print("Demostración de continue:")
+for num in range(1, 6):
+    if num == 3:
+        continue
+    print("Número:", num)
 
+print("\nDemostración de break:")
+for num in range(1, 6):
+    if num == 3:
+        break
+    print("Número:", num)
+
+#Análisis:
+## 17. Observa la salida de la Demostración de continue. ¿Qué número falta en la secuencia impresa y por qué ocurrió esto?
+# El número 3 falta en la secuencia impresa porque la instrucción continue hace que el bucle salte a la siguiente iteración sin ejecutar el resto del código.
+
+## 18. Observa la salida de la Demostración de break. ¿Qué números se imprimieron y qué hace la instrucción break al ejecutarse?
+# Los números impresos son 1 y 2. La instrucción break termina la ejecución del bucle por completo, sin procesar los restantes.
+
+# 19. Supón que construyes un bucle while True: para solicitar claves de acceso. ¿Qué sentencia te permitiría salir del bucle una vez que el usuario ingrese la clave correcta?
+
+    clave = input("Ingrese la clave de acceso: ")
+    if clave == "clave_correcta":
+        break
+#Sección 6: Patrones de Acumulación y Conteo
+
+#Un patrón común en programación consiste en acumular valores o contar ocurrencias a medida que iteramos.
+#codigo 6
+ # Python
+ # Acumulador de suma y contador de coincidencias
+numeros = [4, 7, 2, 9, 10, 5]
+suma_total = 0
+mayores_a_cinco = 0
+
+for num in numeros:
+    suma_total += num  # Acumula la suma
+    if num > 5:
+        mayores_a_cinco += 1  # Incrementa el contador
+
+print("Suma total:", suma_total)
+print("Cantidad de números mayores a 5:", mayores_a_cinco)
+
+# Acumulador de suma y contador de coincidencias
+numeros = [4, 7, 2, 9, 10, 5]
+suma_total = 0
+mayores_a_cinco = 0
+
+for num in numeros:
+    suma_total += num  # Acumula la suma
+    if num > 5:
+        mayores_a_cinco += 1  # Incrementa el contador
+
+print("Suma total:", suma_total)
+print("Cantidad de números mayores a 5:", mayores_a_cinco)
+
+#   Análisis:
+## 20. ¿Con qué valor deben inicializarse las variables suma_total y mayores_a_cinco antes de comenzar el bucle? ¿Qué pasaría si las inicializas dentro del bucle?
+# Las variables suma_total y mayores_a_cinco deben inicializarse en 0 antes de comenzar el bucle. Si se inicializan dentro del bucle, cada iteración reiniciará los valores, 
+# lo que provocará que la suma y el contador no acumulen correctamente los valores.
