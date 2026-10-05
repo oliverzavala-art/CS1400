@@ -1,3 +1,8 @@
+
+#Sección 1: ¿Por qué usar un Bucle? (Repetición Manual vs. Iteración)
+#Analiza el siguiente código para comprender la necesidad de los bucles.
+#Código 1:
+
 # Impresión manual repetitiva
 print("Hola, estudiante")
 print("Hola, estudiante")
@@ -26,3 +31,4 @@ print("Programa finalizado.")
 # 4. Ejecuta el programa e ingresa "si" varias veces consecutivas. ¿Cómo cambia el comportamiento respecto al if?
 
 # 5. ¿Es posible saber con exactitud de antemano cuántas veces el usuario escribirá "si" antes de ejecutar el programa?
+# No, porque la cantidad de veces que el usuario escribe "si" depende  de su decisión en tiempo de ejecución.
