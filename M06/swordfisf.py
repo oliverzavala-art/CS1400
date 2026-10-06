@@ -14,7 +14,7 @@ while True:
     if password == 'swordfish':
         ❹ break
 ❺ print('Access granted.')
-"""
+
 while True:
     print('Who are you?')
     name = input('>')
@@ -26,3 +26,4 @@ while True:
         break
 
 print('Access granted.')
+"""
