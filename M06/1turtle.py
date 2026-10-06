@@ -1,5 +1,7 @@
 """ TODO 1 agregar tu nombre fecha titulo de una manera bonita """
-
+# Nombre: Oliver Zavala
+# Fecha: 2024-06-12
+# Título: Dibujando una casa con turtle
 
 # Importamos la biblioteca turtle (ya viene incluida en Python)
 import turtle
