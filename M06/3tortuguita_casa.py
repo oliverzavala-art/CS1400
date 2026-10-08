@@ -19,6 +19,7 @@
 # ------------------------------------------
 
 import turtle
+from typing import Any
 # La siguiente linea agrega funciones para realizar la tarea en nuestro programa
 #from turtle import make_turtle, forward, left
 
@@ -31,9 +32,7 @@ import turtle
 #  Iniciar ventana y objeto de tortuga y agregar el speed o velocidad. Pista: Mira la Tarea 1turtle.py
 
 # Escribe aquí tu código
-pantalla = turtle.Screen()
-pantalla.bgcolor("white")
-pantalla.setup(500 ,500)
+
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(3)
@@ -43,7 +42,10 @@ t.speed(3)
 #  La ventana debe tener 400 de alto y 400 de ancho.
 
 # Escribe aquí tu código
-
+t.tiltangle
+pantalla = turtle.Screen()
+pantalla.bgcolor("white")
+pantalla.setup(400, 400)
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
 
 # ------------------------------------------
