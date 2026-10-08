@@ -27,3 +27,20 @@ while True:
 
 print('Access granted.')
 """
+# Dibujar una estrella de seis puntas con dos triángulos
+
+mover(-150, 0)
+t.setheading(0)
+dibujar_figura(
+    lados=3, tamaño=80,
+    color_borde="darkgreen",
+    color_relleno="lightgreen"
+)
+
+mover(-150, 46.2)
+t.setheading(0)
+dibujar_figura(
+    lados=3, tamaño=80,
+    color_borde="darkgreen",
+    color_relleno="lightgreen"
+)

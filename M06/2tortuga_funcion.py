@@ -70,10 +70,17 @@ def mover(x, y):
 # Dibujar una estrella/triángulo (3 lados)
 mover(-150, 0)
 dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
+for _ in range(2):
+    mover(-70, 46.2)
+    t.setheading(180)
+dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
 
+t.setheading(0)
 # Dibujar un pentágono (5 lados)
+
 mover(0, 0)
 dibujar_figura(lados=5, tamaño=60, color_borde="purple", color_relleno="plum")
+t.setheading(0)
 
 # Dibujar un hexágono (6 lados)
 mover(150, 0)
@@ -98,3 +105,5 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 
 
 pantalla.exitonclick()
+
+
