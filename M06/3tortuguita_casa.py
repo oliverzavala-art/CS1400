@@ -33,7 +33,7 @@ import turtle
 # Escribe aquí tu código
 pantalla = turtle.Screen()
 pantalla.bgcolor("white")
-pantalla.setup(400, 400)
+pantalla.setup(500 ,500)
 t = turtle.Turtle()
 t.shape("turtle")
 t.speed(3)
