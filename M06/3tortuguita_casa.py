@@ -33,7 +33,7 @@ from turtle import make_turtle, forward, left
 
 # Escribe aquí tu código
 
-t = turtle.Turtle()
+t = make_turtle()
 t.shape("turtle")
 t.speed(3)
 
