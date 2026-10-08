@@ -57,7 +57,7 @@ pantalla.setup(400, 400)
 # Observa qué sucede.
 
 # Escribe aquí tu código
-
+t.forward(100)
 
 # ------------------------------------------
 # Girar la tortuga
