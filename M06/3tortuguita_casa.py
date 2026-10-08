@@ -20,10 +20,10 @@
 
 import turtle
 from typing import Any
-# La siguiente linea agrega funciones para realizar la tarea en nuestro programa
+# La siguiente linea agrega funciones para realizar la tarea en nuestro programa    
 #from turtle import make_turtle, forward, left
 
-from turtle import make_turtle, forward, left   
+
 # ------------------------------------------
 # Crear la ventana y la tortuga
 # ------------------------------------------
@@ -33,7 +33,7 @@ from turtle import make_turtle, forward, left
 
 # Escribe aquí tu código
 
-t = make_turtle()
+t = turtle.Turtle()
 t.shape("turtle")
 t.speed(3)
 
