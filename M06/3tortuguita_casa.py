@@ -68,9 +68,9 @@ t.forward(100)
 # Luego avanza otros 100 pasos.
 
 # Escribe aquí tu código
+
 t.left(90)
 t.forward(100)
-
 # ------------------------------------------
 # Dibujar un cuadrado 
 # ------------------------------------------
