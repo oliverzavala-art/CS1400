@@ -33,7 +33,11 @@ import turtle
 # Escribe aquí tu código
 pantalla = turtle.Screen()
 pantalla.bgcolor("white")
-sp
+pantalla.setup(400, 400)
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(3)
+
 # TODO 2
 #  Crea la tortuga usando make_turtle().
 #  La ventana debe tener 400 de alto y 400 de ancho.
