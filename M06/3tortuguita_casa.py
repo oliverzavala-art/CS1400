@@ -111,6 +111,5 @@ t.forward(100)
 t.left(angulo)
 t.forward(100)
 
-
 # Mantiene la ventana abierta hasta que hagas clic en ella
 pantalla.exitonclick()
