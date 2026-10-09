@@ -87,7 +87,10 @@ print("Dibujando un cuadrado...")
 # La tortuga debe terminar donde empezó.
 
 # Escribe aquí tu código
-
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
 
 # ------------------------------------------
 # Paso EXTRA (opcional)
@@ -98,6 +101,13 @@ print("Dibujando un cuadrado...")
 # - Un triángulo tiene 3 lados.
 # - Un giro completo es 360 grados.
 # - ¿Cuánto debe girar en cada esquina?
+print("Dibujando un triángulo...")
+angulo = 360 / 3
+t.backward(100)
+t.left(45)
+for _ in range(3):
+    t.forward(100)
+    t.left(angulo)
 
 
 # Mantiene la ventana abierta hasta que hagas clic en ella
