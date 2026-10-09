@@ -104,11 +104,14 @@ t.forward(100)
 print("Dibujando un triángulo...")
 angulo = 360 / 3
 t.backward(100)
-t.left(45)
-for _ in range(3):
-    t.forward(100)
-    t.left(angulo)
-
-
+t.left(90)
+t.forward(100)
+t.left(angulo)
+t.forward(100)
+t.left(angulo)
+t.forward(100)
+t.penup()
+t.goto(0, 0)
+t.pendown()
 # Mantiene la ventana abierta hasta que hagas clic en ella
 pantalla.exitonclick()
