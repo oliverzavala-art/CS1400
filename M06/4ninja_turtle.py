@@ -1,3 +1,5 @@
+
+# Nombre: Oliver Zavala
 """
 ====================================================================
 Proyecto: Dibujar una pizza con Python Turtle
