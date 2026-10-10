@@ -30,7 +30,7 @@ t.begin_fill()  # esta línea indica que la tortuga comenzará a rellenar la for
 
 # TODO 6 Este for loop que hace?
 # Este for loop dibuja un cuadrado moviendo la tortuga hacia adelante y girando 90 grados cuatro veces.
-for _ in range(4):
+for _ in range(4):  # este es un bucle que se ejecuta 4 veces
     t.forward(100)  # esta línea hace que la tortuga avance 100 unidades hacia adelante
     t.left(90)      # esta línea hace que la tortuga gire 90 grados a la izquierda
 
