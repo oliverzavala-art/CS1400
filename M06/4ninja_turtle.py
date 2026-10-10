@@ -52,16 +52,18 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     # --------------------------------------------------------------
     
     # 1. Convertimos la mitad del ángulo a radianes para usar trigonometría
-    
+    mitad_angulo = math.radians(angulo / 2)
     
     # TODO 2: Calcula la longitud de la base del triángulo isósceles.
     # FÓRMULA: base = 2 * longitud * sin(angulo / 2)
-    
+    base = 2 * longitud * math.sin(mitad_angulo)
     
     # TODO 3: Calcula el ángulo de giro exterior para la tortuga en las esquinas.
     # Pista: La suma de ángulos internos de un triángulo es 180°.
     # El ángulo en la base es: (180 - angulo) / 2.
     # El giro exterior es: 180 - ángulo_base  =>  90 + (angulo / 2)
+    angulo_giro_base = 90 + (angulo / 2)
+
     
 
     # --------------------------------------------------------------
@@ -79,6 +81,8 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     # 6. Gira 180° para quedar orientado en dirección opuesta
     
     t.forward(longitud)
+    t.left(angulo_giro_base)
+    
     # tu codigo faltante aqui
     t.left(180)  # Reorientar hacia afuera para la siguiente porción
     
