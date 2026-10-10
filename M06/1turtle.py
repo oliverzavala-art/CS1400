@@ -26,13 +26,13 @@ t.speed(3)         # Velocidad del dibujo (1 es lento, 10 es rápido)
 
 t.color("black", "lightblue")  # (Color del borde, Color de relleno - los puedes ajustar si deseas - TODO 5 los colores son parametros o argumentos?)
 # son argumentos de la función color()
-t.begin_fill()
+t.begin_fill()  # esta línea indica que la tortuga comenzará a rellenar la forma que dibuje a continuación
 
 # TODO 6 Este for loop que hace?
 # Este for loop dibuja un cuadrado moviendo la tortuga hacia adelante y girando 90 grados cuatro veces.
 for _ in range(4):
-    t.forward(100)  # 
-    t.left(90)      # 
+    t.forward(100)  # esta línea hace que la tortuga avance 100 unidades hacia adelante
+    t.left(90)      # esta línea hace que la tortuga gire 90 grados a la izquierda
 
 # TODO 7 En que linea de codigo empezo el fill? o relleno?
 # el fill comiensa en la linea 29 con t.begin_fill()
