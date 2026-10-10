@@ -20,12 +20,13 @@ import turtle
 # 1. Configuración Inicial del Entorno
 # ==================================================================
 pantalla = turtle.Screen()
+pantalla.setup(width=800, height=600)
 pantalla.bgcolor("lightcyan")
 pantalla.title("El Poder de las Funciones: Tarta de Triángulos")
 
 t = turtle.Turtle()
 t.shape("turtle")
-t.speed(5)
+t.speed(3)
 
 
 # ==================================================================
@@ -34,6 +35,8 @@ t.speed(5)
 
 # TODO 1: Completa la definición de la función 'dibujar_triangulo'
 def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
+
+
     """
     Dibuja una porción de tarta (triángulo isósceles) usando la tortuga 't'.
     
