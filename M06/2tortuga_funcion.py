@@ -75,7 +75,7 @@ for _ in range(2):  # Repite el movimiento y giro dos veces para dibujar la segu
     t.setheading(180)  # Reorienta la tortuga hacia la dirección opuesta antes de dibujar la siguiente figura
 dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
 
-t.setheading(0)
+t.setheading(0) #es la dirección inicial de la tortuga antes de dibujar el pentágono
 # Dibujar un pentágono (5 lados)
 
 mover(0, 0)
