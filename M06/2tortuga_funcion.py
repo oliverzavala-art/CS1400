@@ -107,10 +107,13 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 # Dibujando un cuadrado (4 lados) sin usar la función 'dibujar_figura'
 """
 mover(-150, -120)
+t.color("green", "red")  # Cambia el color del borde a verde y el relleno a rojo.
+t.begin_fill()  # Comienza a rellenar el cuadrado
 for _ in range(4):
     t.forward(80)
     t.left(90)
-    turtle.color("red")  # Cambia el color del borde a rojo para el cuadrado
+t.end_fill()  # Termina de rellenar el cuadrado
+
 
 #5.Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
       
