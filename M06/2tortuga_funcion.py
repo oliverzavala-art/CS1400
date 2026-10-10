@@ -68,7 +68,7 @@ def mover(x, y):
 # ==================================================================
 
 # Dibujar una estrella/triángulo (3 lados)
-mover(-150, 0)
+mover(-150, 0) # Mueve la tortuga a la posición inicial para dibujar el triángulo
 dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
 for _ in range(2):
     mover(-70, 46.2)
