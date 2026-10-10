@@ -119,3 +119,4 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
 # --- Tarta 3: Tarta pequeña (o pizza) de 4 porciones ---
 
 # TODO 10: Finalizar ejecución al hacer clic
+pantalla.exitonclick()
