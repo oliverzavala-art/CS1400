@@ -104,10 +104,16 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 
 4. Bajo la seccion de pruebas, intenta hacer una nueva figura sin el uso de la funcion dibujar_figura.
 
-
-5. Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
-      
+# Dibujando un cuadrado (4 lados) sin usar la función 'dibujar_figura'
 """
+mover(-150, -100)
+for _ in range(4):
+    t.forward(80)
+    t.left(90)
+
+#5.Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
+      
+
 
 
 pantalla.exitonclick()
