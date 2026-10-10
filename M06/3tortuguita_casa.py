@@ -48,6 +48,8 @@ t.speed(3)
 pantalla = turtle.Screen()
 pantalla.bgcolor("lightblue")
 pantalla.setup(400, 400)
+pantalla.title("Casita de Oliver")
+
 # Captura de Pantalla, nombralo "TUNOMBRE_1_2" y guardalo en la carpeta M06
 
 # ------------------------------------------
