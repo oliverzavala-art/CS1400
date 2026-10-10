@@ -72,7 +72,7 @@ mover(-150, 0)
 dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
 for _ in range(2):
     mover(-70, 46.2)
-    t.setheading(180)
+    t.setheading(180)  # Reorienta la tortuga hacia la dirección opuesta antes de dibujar la siguiente figura
 dibujar_figura(lados=3, tamaño=80, color_borde="darkgreen", color_relleno="lightgreen")
 
 t.setheading(0)
