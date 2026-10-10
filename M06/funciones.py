@@ -1,5 +1,7 @@
 #Nombre: Oliver Zavala
 # Fecha: 2024-06-12
+# Función para simular el lanzamiento de un dado de seis caras.
+
 # --------------------------------------------------------------------------
 #          FUNCIÓN PARA SIMULAR EL LANZAMIENTO DE UN DADO
 # --------------------------------------------------------------------------
