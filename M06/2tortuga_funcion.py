@@ -91,13 +91,19 @@ dibujar_figura(lados=6, tamaño=50, color_borde="darkblue", color_relleno="skybl
 # 4. PREGUNTAS
 # ==================================================================
 """
-1.  ¿Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
+ 1.Cuantas funciones hay en este programa? Que proposito tienen? En tus propias palabras agrega comentario completo.
+ Hay dos funciones en este programa:
+ A -dibujar_figura': Dibuja cualquier polígono regular basado en el número de lados
+ B -mover': Mueve la tortuga a una posición específica sin dibujar.
 
-2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
+ 2. ¿Qué parámetro de la función 'dibujar_figura' tendrías que cambiar para hacer un octágono (8 lados)?
+ Para hacer un octágono, se debe cambiar el parámetro 'lados' a uno que represente 8 lados.
 
-3 ¿En que numero de linea termina la funcion mover?
+3.¿En que numero de linea termina la funcion mover?
+ La función 'mover' termina en la línea 62.con el comando 't.pendown()'.
 
 4. Bajo la seccion de pruebas, intenta hacer una nueva figura sin el uso de la funcion dibujar_figura.
+
 
 5. Guarda una captura de pantalla con las 4 figuras en la carpeta M06.
       
