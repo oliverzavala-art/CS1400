@@ -114,6 +114,21 @@ t.left(angulo)
 t.forward(100)
 t.left(angulo)
 t.forward(100)
+#ir a la posición inicial para dibujar la puerta
+
+t.penup() # Levanta la pluma para mover la tortuga sin dibujar
+t.goto(35, 0)  # Ajusta la posición según sea necesario
+t.pendown() 
+t.setheading(0) 
+t.pendown() # Coloca la tortuga en posición para dibujar la puerta
+
+#dibujar una puerta en la casita
+
+for _ in range(2):
+    t.forward(30)
+    t.left(90)
+    t.forward(30)
+    t.left(90)
 
 # Mantiene la ventana abierta hasta que hagas clic en ella
 pantalla.exitonclick()
