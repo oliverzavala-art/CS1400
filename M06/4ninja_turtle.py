@@ -33,9 +33,10 @@ t.speed(3)
 # 2. Definición de Funciones
 # ==================================================================
 
-# TODO 1: Completa la definición de la función 'dibujar_triangulo'
+#TODO 1: Completa la definición de la función 'dibujar_triangulo'
 def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
-
+   t.fillcolor(color_relleno)   
+   t.begin_fill()
 
     """
     Dibuja una porción de tarta (triángulo isósceles) usando la tortuga 't'.
