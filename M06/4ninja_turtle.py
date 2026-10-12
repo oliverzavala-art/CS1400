@@ -137,7 +137,7 @@ dibujar_tarta(t, 12, 80, "gold")
 
 # --- Tarta 3: Tarta pequeña (o pizza) de 4 porciones ---
 mover_tortuga(t, 220, 0)
-dibujar_tarta(t, 4, 60, "tomato")
+dibujar_tarta(t, 4, 60)
 
 # TODO 10: Finalizar ejecución al hacer clic
 
