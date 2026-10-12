@@ -87,6 +87,13 @@ print(resultado)
 # respuesta :Porque es una variable local: se crea dentro de calcular_descuento() y solo se puede usar dentro de esa función.
 
 # 14. ¿Qué ocurre si dentro de calcular_descuento cambias 'return precio_final' por 'print(precio_final)' e intentas sumar 'compra_1 + 5'?
-# respuesta: Si cambias 'return precio_final' por 'print(precio_final)', la función ya no devuelve un valor, por lo que al intentar sumar 'compra_1 + 5' obtendrás un error del tipo TypeError, porque no puedes sumar None con un número.
+# respuesta: Si cambias 'return precio_final' por 'print(precio_final)', la función ya no devuelve un valor, por lo que al intentar sumar 'compra_1 + 5'
+#  obtendrás un error del tipo TypeError, porque no puedes sumar None con un número.
+
 # 15. Investiga: ¿Cómo podrías llamar a la función 'calcular_descuento' asignando el porcentaje mediante su nombre de parámetro (keyword argument)?
+# respuesta :  Puedes llamar a la función usando el nombre del parámetro, por ejemplo:
+# calcular_descuento(200, porcentaje=20)
+
 # 16. Añade un "docstring" (comentario multilínea con """) dentro de cada función para explicar brevemente qué hace.
+# respuesta :Un docstring es un texto entre comillas triples que va al principio de la función y explica qué hace. 
+# Aunque se parece a un comentario, es una cadena de documentación.
