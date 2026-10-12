@@ -26,7 +26,11 @@ def es_par(numero):
 
 # PREGUNTAS:
 # 3. ¿Qué palabra clave (keyword) de Python se utiliza para indicar que estamos definiendo una función?
+#respuesta: la palabra clave es "def".
+
 # 4. Escribe los nombres de las dos funciones definidas arriba.
+#respesta: la primera se llama calcular_descuento y la segunda se llama es_par
+
 # 5. ¿Qué sucede cuando llamas a la función pasando solo un argumento, como calcular_descuento(100)?
 # 6. ¿Qué ocurre si pasas dos argumentos, como calcular_descuento(200, 20)?
 
