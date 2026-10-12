@@ -7,10 +7,10 @@ def mostrar_bienvenida(nombre):
 
 # PREGUNTAS:
 # 1. En la función mostrar_bienvenida(nombre), ¿cómo se llama la variable "nombre" dentro de los paréntesis?
-#respuesta: La variable "nombre"  se llama "parámetro" de la función.
+# respuesta: La variable "nombre"  se llama "parámetro" de la función.
 
 # 2. ¿Qué le falta al código para ser completamente reutilizable?
-#respuesta:le falta la palabrra clave "def" para definir la función. Para que sea reusable.
+# respuesta:le falta la palabrra clave "def" para definir la función. Para que sea reusable.
 
 # =============================================================
 # Parte 2: Funciones con retorno (Procesamiento de datos)
@@ -26,14 +26,18 @@ def es_par(numero):
 
 # PREGUNTAS:
 # 3. ¿Qué palabra clave (keyword) de Python se utiliza para indicar que estamos definiendo una función?
-#respuesta: la palabra clave es "def".
+# respuesta: la palabra clave es "def".
 
 # 4. Escribe los nombres de las dos funciones definidas arriba.
-#respesta: la primera se llama calcular_descuento y la segunda se llama es_par
+# respesta: la primera se llama calcular_descuento y la segunda se llama es_par
 
 # 5. ¿Qué sucede cuando llamas a la función pasando solo un argumento, como calcular_descuento(100)?
-# 6. ¿Qué ocurre si pasas dos argumentos, como calcular_descuento(200, 20)?
+# respuesta: como no indica el porcentaje, se utiliza el valor por defecto de 10%.  
+# En este caso, el precio final será 90.0.
 
+# 6. ¿Qué ocurre si pasas dos argumentos, como calcular_descuento(200, 20)?
+# La función aplica un descuento del 20% al precio de 200.y
+# El descuento es 40 y la función devuelve 160.0
 
 # =============================================================
 # Parte 3: Pruebas de ejecución
@@ -70,9 +74,19 @@ print(resultado)
 
 # PREGUNTAS:
 # 10. ¿Qué valor se guarda en la variable 'resultado' y por qué?
+# respuesta :Se guarda None, porque mostrar_bienvenida() muestra el saludo con print, pero no devuelve un valor con return.
+
 # 11. ¿Por qué es necesario usar return en calcular_descuento() para poder guardar el precio final en compra_1 y compra_2?
+# respuesta: Porque return entrega el resultado de la función para que podamos guardarlo en una variable.
+
 # 12. Intenta ejecutar la siguiente línea al final del documento: print(descuento) ¿Qué error muestra Python?
+# respuesta : Si no has creado otra variable llamada descuento fuera de la función, muestra:
+# NameError: name 'descuento' is not defined
+
 # 13. ¿Por qué la variable 'descuento' no es accesible fuera de la función?
+# respuesta :Porque es una variable local: se crea dentro de calcular_descuento() y solo se puede usar dentro de esa función.
+
 # 14. ¿Qué ocurre si dentro de calcular_descuento cambias 'return precio_final' por 'print(precio_final)' e intentas sumar 'compra_1 + 5'?
+# respuesta: Si cambias 'return precio_final' por 'print(precio_final)', la función ya no devuelve un valor, por lo que al intentar sumar 'compra_1 + 5' obtendrás un error del tipo TypeError, porque no puedes sumar None con un número.
 # 15. Investiga: ¿Cómo podrías llamar a la función 'calcular_descuento' asignando el porcentaje mediante su nombre de parámetro (keyword argument)?
 # 16. Añade un "docstring" (comentario multilínea con """) dentro de cada función para explicar brevemente qué hace.
