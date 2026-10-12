@@ -26,7 +26,7 @@ pantalla.title("El Poder de las Funciones: Tarta de Triángulos")
 
 t = turtle.Turtle()
 t.shape("turtle")
-t.speed(3)
+t.speed(5)
 
 
 # ==================================================================
@@ -35,14 +35,10 @@ t.speed(3)
 
 #TODO 1: Completa la definición de la función 'dibujar_triangulo'
 def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
-   t.fillcolor(color_relleno)   
-   t.begin_fill()       
 
-   for _ in range(3):
-        t.forward(longitud)
-        t.left(180 - angulo)
-   t.end_fill()
-
+    Dibuja una porción de tarta.
+    """
+d
     """
     Dibuja una porción de tarta (triángulo isósceles) usando la tortuga 't'.
     
@@ -51,7 +47,10 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
     - longitud: La longitud de los dos lados iguales (el radio de la tarta).
     - angulo: El ángulo en el vértice central (en grados).
     - color_relleno: El color con el que se pintará la porción.
-    
+    """
+    t.fillcolor(color_relleno)
+    t.begin_fill()
+    t.fillcolor(color_relleno)
     
     # --------------------------------------------------------------
     # Paso A: Cálculos Matemáticos (Geometría del Triángulo)
@@ -98,7 +97,7 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
 # TODO 5: Función que reutiliza 'dibujar_triangulo' para construir la tarta completa. 
 # Parametros incluyen porciones, longitud, y el color del relleno.
 
-    """
+
    # Dibuja una tarta completa de 'n_porciones' llamando repetidamente
     #a la función 'dibujar_triangulo'.
     """
@@ -111,7 +110,7 @@ def dibujar_triangulo(t, longitud, angulo, color_relleno="orange"):
 
 # TODO 8 (EXTRA/OPCIONAL): Función auxiliar para mover la tortuga sin dejar rastro
 # def mover_tortuga(t, x, y):
-    """Mueve la tortuga a las coordenadas (x, y) sin dibujar."""
+  #  """Mueve la tortuga a las coordenadas (x, y) sin dibujar."""
     # Investigar .penup .goto y .pendown
 
 
