@@ -6,11 +6,14 @@ Incluir espacios manualmente (" "), y combinar entrada del usuario con otros tex
 """
 
 # TODO Tarea 1: Escribe una linea de bienvenida a este programa 
-
+print("Bienvenido al programa de concatenación de cadenas. Vamos a conocer tu nombre completo y tu canción favorita.")
 
 # TODO Tarea 2: Solicitar datos del usuario. 
 # Usar tres variables: nombre, apellido, y cancion.
 # ## Entrevista algun companero(a) para averiguar su cancion preferida y su nombrecompleto.
+nombre = input("Por favor, escribe tu primer nombre: ")
+apellido = input("Por favor, escribe tu apellido: ")
+cancion = input("Por favor, escribe el nombre de una canción que te guste: ")
 
 # Una manera de validar entradas vacías
 # Toma en cuenta que cambios podrias realizar si tienen un segundo nombre, y/o un segundo apellido.

@@ -6,11 +6,11 @@
 
 # Lista de ofrendas editables (pueden agregarse o quitarse elementos)
 ofrendas = ["Pan de muerto", "Flor de cempasúchil", "Velas", "Calaverita de azúcar"]
-
+ofrendas.append("Incienso copal")  # Agregar un nuevo elemento a la lista
+ofrendas.sort()  # Ordenar la lista alfabéticamente 
 # Tupla con los niveles tradicionales del altar (constante, no debe cambiar)
 
 NIVELES_ALTAR = ("Cielo", "Tierra", "Inframundo")
-
 # Mostrar la segunda ofrenda (índice 1)
 print("Segunda ofrenda:", ofrendas[1])
 
