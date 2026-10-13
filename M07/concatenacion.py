@@ -14,6 +14,9 @@ print("Bienvenido al programa de concatenación de cadenas. Vamos a conocer tu n
 nombre = input("Por favor, escribe tu primer nombre: ")
 apellido = input("Por favor, escribe tu apellido: ")
 cancion = input("Por favor, escribe el nombre de una canción que te guste: ")
+nombre_completo = nombre + " " + apellido
+print("Tu nombre completo es: " + nombre_completo)
+print("Tu canción favorita es: " + cancion)
 
 # Una manera de validar entradas vacías
 # Toma en cuenta que cambios podrias realizar si tienen un segundo nombre, y/o un segundo apellido.
