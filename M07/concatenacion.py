@@ -33,6 +33,7 @@ if not cancion.strip():
 # Formatear entrada: capitalizar nombres
 # Agregar nuevos variables si es necesario.
 nombre = nombre.strip().capitalize()
+
 apellido = apellido.strip().capitalize()
 cancion = cancion.strip().title()
 
