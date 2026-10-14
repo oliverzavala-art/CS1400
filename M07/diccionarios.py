@@ -53,11 +53,11 @@ for i in plbList: # recorre el diccionario y muestra la palabra y su cantidad de
 # Ejemplo de conteo de calificaciones
 notas = "A A A B B A C A B C C E A B A C C C A B B B A B A A A C D A B B C C A A A B A B A C A B B A"
 listaNotas = notas.split()
-notasDiccionario = dict()
+notasDiccionario = dict() 
 
 for i in listaNotas:
   if i not in notasDiccionario:
-    notasDiccionario[i] = 1
+    notasDiccionario[i] = 1 
   else:
     notasDiccionario[i] += 1
 
