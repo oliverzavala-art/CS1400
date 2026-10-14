@@ -133,10 +133,13 @@ Respuesta: listaNotas es una lista, ya que se crea a partir de la función split
 Respuesta: La función split() divide una cadena de texto en una lista de palabras, utilizando espacios como delimitadores por defecto.
 
 3. Observa la variable notasDiccionario. ¿Está definida como una lista o un diccionario?
+Respuesta: notasDiccionario está definida como un diccionario, ya que se crea utilizando la sintaxis dict().
 
 4. ¿Hay valores en el diccionario o está vacío?
+Respuesta: El diccionario notasDiccionario está vacío al inicio, ya que se crea con dict() sin pasarle ningún par clave-valor.
 
 5. Observa el bucle for. ¿Está iterando a través de la lista o del diccionario?
+Respuesta: El bucle for está iterando a través de la lista listaNotas, ya que se utiliza la sintaxis "for i in listaNotas".
 
 6. Dado que la primera puntuación en listaNotas es "A", ¿el código ejecutaría la sentencia if o la sentencia else dentro del bucle?
 
