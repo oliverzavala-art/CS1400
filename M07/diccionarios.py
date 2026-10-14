@@ -94,12 +94,16 @@ Nota que la variable refugioOriginal es igual a la variable animalesRefugiados. 
 Respuesta: Es una copia superficial, ya que ambas variables apuntan al mismo diccionario en memoria.
 
 Escribe el comando para mostrar los animales de refugioOriginal al final del segmento de código. ¿Muestra los animales originales?
-Respuesta: El comando es: print(refugioOriginal). Sí, muestra los animales originales, 
-pero cualquier cambio en animalesRefugiados también afectará a refugioOriginal debido a que es una copia superficial.
+Respuesta: El comando es: print(refugioOriginal).
 
 Cambia refugioOriginal para que sea una copia profunda (deep copy) de animalesRefugiados (recuerda importar la librería copy). ¿Muestra los animales originales ahora?
+Respuesta: Sí, al hacer una copia profunda, refugioOriginal contendrá los animales originales 
+y no reflejará los cambios realizados en animalesRefugiados.
 
-¿Qué diferencia notas entre una copia profunda y una copia superficial? """
+¿Qué diferencia notas entre una copia profunda y una copia superficial? 
+
+Respuesta: La diferencia principal es que una copia superficial crea una nueva referencia al mismo objeto, 
+por lo que los cambios en uno afectan al otro. En cambio, una copia profunda crea un nuevo objeto independiente, por lo que los cambios en uno no afectan al otro."""
 import copy
 
 animalesRefugiados = {"perro": 49, "gato": 38, "conejo": 14}
@@ -110,9 +114,11 @@ animalesRefugiados["gato"] -= 3
 animalesRefugiados["Serpiente"] = 4
 print(animalesRefugiados)
 if animalesRefugiados["perro"] > 50:
+    
     print("Lleno ")
     if "raton" not in  animalesRefugiados :
         print("No hay ratones")
+print(refugioOriginal)
 
 refugioOriginal=copy.deepcopy(animalesRefugiados)
 
