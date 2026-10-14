@@ -114,7 +114,7 @@ animalesRefugiados["gato"] -= 3
 animalesRefugiados["Serpiente"] = 4
 print(animalesRefugiados)
 if animalesRefugiados["perro"] > 50:
-    
+
     print("Lleno ")
     if "raton" not in  animalesRefugiados :
         print("No hay ratones")
@@ -122,6 +122,28 @@ print(refugioOriginal)
 
 refugioOriginal=copy.deepcopy(animalesRefugiados)
 
+
+"""  Uso de Diccionarios
+El siguiente segmento de código contará cuántas veces aparece cada palabra en el texto dado.
+
+1. Observa la variable listaNotas. ¿Es una lista o un diccionario?
+Respuesta: listaNotas es una lista, ya que se crea a partir de la función split() aplicada a la cadena de texto notas.
+
+2. ¿Qué hace la función split()? (Puedes consultar lecciones anteriores).
+Respuesta: La función split() divide una cadena de texto en una lista de palabras, utilizando espacios como delimitadores por defecto.
+3. Observa la variable notasDiccionario. ¿Está definida como una lista o un diccionario?
+
+4. ¿Hay valores en el diccionario o está vacío?
+
+5. Observa el bucle for. ¿Está iterando a través de la lista o del diccionario?
+
+6. Dado que la primera puntuación en listaNotas es "A", ¿el código ejecutaría la sentencia if o la sentencia else dentro del bucle?
+
+7. El comando es notasDiccionario[i] = 1, cuando i es igual al texto "A", ¿cuál es el par clave-valor que se agrega al diccionario?
+
+8. La calificación "A" se agrega varias veces. La primera vez, pasa por el if. La segunda vez, pasará por el comando else. Hablando de esa segunda vez cuando i = "A", el par clave-valor es inicialmente "A": 1, ¿a qué valor se actualiza cuando se ejecuta el comando notasDiccionario[i] += 1?
+
+9. Ejecuta el programa, ¿cuántas veces aparece la calificación "A" en los puntajes?"""
 # Ejemplo de conteo de palabras
 text = "sana sana curita de rana sana sana pomada de sapo sana sana hoy y manana manana y hoy"
 
