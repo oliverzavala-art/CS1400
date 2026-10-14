@@ -131,6 +131,7 @@ Respuesta: listaNotas es una lista, ya que se crea a partir de la función split
 
 2. ¿Qué hace la función split()? (Puedes consultar lecciones anteriores).
 Respuesta: La función split() divide una cadena de texto en una lista de palabras, utilizando espacios como delimitadores por defecto.
+
 3. Observa la variable notasDiccionario. ¿Está definida como una lista o un diccionario?
 
 4. ¿Hay valores en el diccionario o está vacío?
