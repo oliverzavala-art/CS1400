@@ -139,11 +139,13 @@ Respuesta: notasDiccionario está definida como un diccionario, ya que se crea u
 Respuesta: El diccionario notasDiccionario está vacío al inicio, ya que se crea con dict() sin pasarle ningún par clave-valor.
 
 5. Observa el bucle for. ¿Está iterando a través de la lista o del diccionario?
-Respuesta: El bucle for está iterando a través de la lista listaNotas, ya que se utiliza la sintaxis "for i in listaNotas".
+Respuesta: El bucle for está iterando a través de la lista listaNotas.
 
 6. Dado que la primera puntuación en listaNotas es "A", ¿el código ejecutaría la sentencia if o la sentencia else dentro del bucle?
+ Respuesta: El código ejecutaría la sentencia if, agregando "A" al diccionario con un valor de 1.
 
 7. El comando es notasDiccionario[i] = 1, cuando i es igual al texto "A", ¿cuál es el par clave-valor que se agrega al diccionario?
+Respuesta: El par clave-valor que se agrega al diccionario es "A": 1.
 
 8. La calificación "A" se agrega varias veces. La primera vez, pasa por el if. La segunda vez, pasará por el comando else. Hablando de esa segunda vez cuando i = "A", el par clave-valor es inicialmente "A": 1, ¿a qué valor se actualiza cuando se ejecuta el comando notasDiccionario[i] += 1?
 
