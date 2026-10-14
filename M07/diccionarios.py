@@ -39,17 +39,16 @@ refugioOriginal=copy.deepcopy(animalesRefugiados)
 # Ejemplo de conteo de palabras
 text = "sana sana curita de rana sana sana pomada de sapo sana sana hoy y manana manana y hoy"
 
-lst = text.split()
-plbList = dict()
-
-for x in lst:
-    if x not in plbList:
-        plbList[x] = 1
+lst = text.split()  #esta función separa el texto en palabras y las guarda en una lista
+plbList = dict() # esta línea crea un diccionario vacío 
+for x in lst: # recorre la lista de palabras
+    if x not in plbList: # si la palabra no está en el diccionario, la agrega con valor 1
+        plbList[x] = 1 # esta función agrega la palabra al diccionario con valor 1
     else:
-        plbList[x] += 1
+        plbList[x] += 1 # si la palabra ya está en el diccionario, incrementa su valor en 1
 
-for i in plbList:
-    print (i, plbList[i])
+for i in plbList: # recorre el diccionario y muestra la palabra y su cantidad de apariciones
+    print (i, plbList[i]) # esta línea imprime la palabra y su cantidad de apariciones en el texto
 
 # Ejemplo de conteo de calificaciones
 notas = "A A A B B A C A B C C E A B A C C C A B B B A B A A A C D A B B C C A A A B A B A C A B B A"
