@@ -83,14 +83,19 @@ playerNumbers.pop(0)
 # 3. Use 'append' para agregar estas variables a sus listas:
 #name = "Lucas" 
 #num = 7
+playerNames.append("Lucas")
+playerNumbers.append(7)
 
 # 4. Use 'insert' para que "Raven" (número 1) sea la primera en la lista:
+insert_name = "Raven"
+insert_num = 1
 
 #Contadores e Iteradores (Counters and Iterators)
 #Analiza la siguiente función que genera datos para los ejercicios:
 
 #Python
 #import random
+
 
 #def Generate_Numbers():
     #numbers = []
