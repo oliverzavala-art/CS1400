@@ -17,8 +17,8 @@ comidas = ["tacos", "pizza", "hamburguesa"]
 
 # Mostrar datos
 
-print(mensaje.upper())
-print(comidas[0])
+#print(mensaje)
+#print(comidas[0])
 """
 Análisis inicial:
 1. Ejecuta el código. ¿Cómo se muestra el texto de la variable mensaje en la consola?
@@ -27,39 +27,46 @@ Respuesta: Se muestra  el mesaje "bienvenido al curso de python" en minúsculas 
 2. Observa la instrucción print(comidas[0]). ¿Qué comida se imprimió en pantalla y en qué posición de la lista se encuentra?
 #Respuesta: Se imprimió "tacos" que se encuentra en la primera posición que es 0 de la lista comidas.
 
-3. Modificación 1: Métodos de cadenas (Strings)
+ Modificación 1: Métodos de cadenas (Strings)
 
 Aplica el método .upper() a la variable mensaje para transformarla a mayúsculas. Puedes hacerlo directamente en el print() o asignándolo a una nueva variable:
 
 """
+print(mensaje.upper())
+
 #Python
 # Ejemplo de modificación:
 
 #print(mensaje.upper())
-"""
-Ejecuta el programa modificado. ¿Qué cambio ocurrió en la salida del texto respecto al código original?
 
-Modificación 2: Acceso a elementos de una lista
-En Python, los índices de las listas comienzan a contar desde 0.
+# 3. Ejecuta el programa modificado. ¿Qué cambio ocurrió en la salida del texto respecto al código original?
+#Respuesta: El texto del mensaje se muestra en mayúsculas.
 
-Cambia el índice dentro del corchete comidas[0] para mostrar en pantalla la segunda comida de tu lista. ¿Qué número de índice tuviste que utilizar y por qué?
+#Modificación 2: Acceso a elementos de una lista
+#En Python, los índices de las listas comienzan a contar desde 0.
 
-Modifica la lista comidas para que incluya tres de tus alimentos favoritos reales y vuelve a imprimir únicamente la segunda opción.
+#4. Cambia el índice dentro del corchete comidas[0] para mostrar en pantalla la segunda comida de tu lista. ¿Qué número de índice tuviste que utilizar y por qué?
+print(comidas[3-5])
+#Respuesta: Tuve que cambiar a 1 porque los índices comienzan desde 0, y por eso la segunda comida se encuentra en la posición 2 de la lista.
 
-Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
+# 5. Modifica la lista comidas para que incluya tres de tus alimentos favoritos reales y vuelve a imprimir únicamente la segunda opción.
+# Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
+comidas.insert(1, "sushi")
+comidas.insert(2, "pupusas")
+comidas.insert(3, "panes con pollo")
 
-¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
+#6.¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
 
-¿Qué método elimina un elemento de la lista por su valor de índice? RESPUESTA: __________
+#7.¿Qué método elimina un elemento de la lista por su valor de índice? RESPUESTA: __________
 
-¿Qué método elimina un elemento de la lista usando el valor del elemento? RESPUESTA: __________
+#8.¿Qué método elimina un elemento de la lista usando el valor del elemento? RESPUESTA: __________
 
-¿Qué método agrega un elemento al final de la lista? RESPUESTA: __________
+#9.¿Qué método agrega un elemento al final de la lista? RESPUESTA: __________
 
-¿Qué método agrega un elemento en una ubicación específica? RESPUESTA: __________
+#10.¿Qué método agrega un elemento en una ubicación específica? RESPUESTA: __________
 
-DESAFÍO DE CÓDIGO 1:
-"""
+# DESAFÍO DE CÓDIGO 1:
+
 #Python
 #playerNames = ["Adam", "Bethanie", "Carrie", "Doug", "Eddie"]
 #playerNumbers = [5, 2, 6, 13, 0]
