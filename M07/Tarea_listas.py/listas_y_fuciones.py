@@ -32,6 +32,7 @@ Respuesta: Se muestra  el mesaje "bienvenido al curso de python" en minúsculas 
 Aplica el método .upper() a la variable mensaje para transformarla a mayúsculas. Puedes hacerlo directamente en el print() o asignándolo a una nueva variable:
 
 """
+"""
 print(mensaje.upper())
 
 #Python
@@ -53,7 +54,7 @@ print(mensaje.upper())
 # Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
 comidas = ["sushi", "pupusas", "panes con pollo"]
 print(comidas[1])
-
+"""
 #6.¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
 # Respuesta: clear()
 
@@ -89,28 +90,35 @@ playerNumbers.append(7)
 # 4. Use 'insert' para que "Raven" (número 1) sea la primera en la lista:
 insert_name = "Raven"
 insert_num = 1
-
+playerNames.insert(0, insert_name)
+playerNumbers.insert(0, insert_num)
+print(playerNames)
+print(playerNumbers)
 #Contadores e Iteradores (Counters and Iterators)
 #Analiza la siguiente función que genera datos para los ejercicios:
 
 #Python
-#import random
+import random
 
 
-#def Generate_Numbers():
-    #numbers = []
-    # i in range(20):
-    #    num = random.randint(1, 50)
-    #    numbers.append(num)
-   # return numbers
+def Generate_Numbers():
+    numbers = []
+    for i in range(20):
+        num = random.randint(1, 50)
+        numbers.append(num)
+    return numbers
 
 # Llamada a la función
-#mis_numeros = Generate_Numbers()
-#¿Qué tipo de datos se está agregando a la lista numbers? RESPUESTA: __________
+mis_numeros = Generate_Numbers()
+print(mis_numeros)
 
-#¿Cuántos números se están agregando exactamente a la lista? RESPUESTA: __________
+#11. ¿Qué tipo de datos se está agregando a la lista numbers? RESPUESTA: __________
+# Respuesta: Se están agregando números enteros (int) a la lista numbers.
 
-#¿Qué devuelve (return) la función al final de su ejecución? RESPUESTA: __________
+#12. ¿Cuántos números se están agregando exactamente a la lista? RESPUESTA: __________
+# Respuesta: Se están agregando exactamente 20 números a la lista.
+
+#13. ¿Qué devuelve (return) la función al final de su ejecución? RESPUESTA: __________
 
 #DESAFÍO DE CÓDIGO 2:
 
