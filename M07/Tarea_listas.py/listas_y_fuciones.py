@@ -113,22 +113,28 @@ mis_numeros = Generate_Numbers()
 print(mis_numeros)
 
 #11. ¿Qué tipo de datos se está agregando a la lista numbers? RESPUESTA: __________
-# Respuesta: Se están agregando números enteros (int) a la lista numbers.
+# Respuesta: Se esta agregando numeros raamdom enteros entre 1 y 50 a la lista numbers.
 
 #12. ¿Cuántos números se están agregando exactamente a la lista? RESPUESTA: __________
 # Respuesta: Se están agregando exactamente 20 números a la lista.
 
 #13. ¿Qué devuelve (return) la función al final de su ejecución? RESPUESTA: __________
+# Respuesta: La función devuelve la lista numbers que contiene los 20 números aleatorios generados.
 
 #DESAFÍO DE CÓDIGO 2:
 
 #Completa las funciones de análisis de datos:
 
 #Python
-#def Even_Numbers(lista_origen):
-   # even = []
+
+def Even_Numbers(lista_origen):
+    even = []
+
     # TODO: Itere la lista_origen y agregue a 'even' solo los números pares
-    #return even
+    for num in lista_origen:
+        if num%2 == 0:
+            even.append(num)
+    return even
 
 #def Ten_Or_Less(lista_origen):
     # TODO: Cree una lista vacía, busque valores <= 10 y devuélvala
