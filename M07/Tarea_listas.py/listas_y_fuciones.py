@@ -46,24 +46,31 @@ print(mensaje.upper())
 #En Python, los índices de las listas comienzan a contar desde 0.
 
 #4. Cambia el índice dentro del corchete comidas[0] para mostrar en pantalla la segunda comida de tu lista. ¿Qué número de índice tuviste que utilizar y por qué?
-print(comidas[3-5])
+#print(comidas[1])
 #Respuesta: Tuve que cambiar a 1 porque los índices comienzan desde 0, y por eso la segunda comida se encuentra en la posición 2 de la lista.
 
 # 5. Modifica la lista comidas para que incluya tres de tus alimentos favoritos reales y vuelve a imprimir únicamente la segunda opción.
 # Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
+comidas.clear()
+
 comidas.insert(1, "sushi")
 comidas.insert(2, "pupusas")
 comidas.insert(3, "panes con pollo")
+print(comidas[0:3])
 
 #6.¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
+# Respuesta: clear()
 
 #7.¿Qué método elimina un elemento de la lista por su valor de índice? RESPUESTA: __________
-
+# Respuesta: pop()
 #8.¿Qué método elimina un elemento de la lista usando el valor del elemento? RESPUESTA: __________
+# Respuesta: remove()
 
 #9.¿Qué método agrega un elemento al final de la lista? RESPUESTA: __________
+# Respuesta: append()
 
 #10.¿Qué método agrega un elemento en una ubicación específica? RESPUESTA: __________
+# Respuesta: insert()
 
 # DESAFÍO DE CÓDIGO 1:
 
