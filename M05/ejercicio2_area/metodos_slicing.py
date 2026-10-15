@@ -1,5 +1,5 @@
 
-"""
+
 # Conteo descendente
 num = int(input("Introduce el número inicial: "))
 
@@ -116,10 +116,10 @@ print("Última posición de 'a' en 'banana':", texto.rfind('a'))
 #Respuesta: El método .isalpha() devuelve True si todos los caracteres de la cadena son letras, de lo contrario devuelve False.
 print("¿'abc'.isalpha()?:", "abc".isalpha())
 print("¿'abc123'.isalpha()?:", "abc123".isalpha())  
-"""
+
 # 23. Método .isdigit():
 #Respuesta: El método .isdigit() devuelve True si todos los caracteres de la cadena son dígitos numéricos, de lo contrario devuelve False.
-print("¿'12345'.isdigit()?:", "12345".isdigit())
-print("¿'abc123'.isdigit()?:", "abc123".isdigit()) 
+print("¿'12345'.isdigit()?:", "12345".isdigit()) # esto devuelve True porque todos los caracteres son dígitos numéricos
+print("¿'abc123'.isdigit()?:", "abc123".isdigit()) #esto devuelve False porque la cadena contiene letras además de dígitos numéricos
  
 

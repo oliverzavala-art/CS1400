@@ -13,7 +13,7 @@
 Respuesta: No hay una coma después de "Cruz" porque es el último par clave-valor en el diccionario. 
 
 3. ¿Cuántos pares clave-valor hay inicialmente en el diccionario?
-Respuesta: Inicialmente hay 6 pares clave-valor en el diccionario.
+Respuesta: Inicialmente hay 6 pares clave-valor en el dicciaonario.
 
 4. Ejecuta el programa. ¿Qué reporta la función len() como la longitud del diccionario?
 Respuesta: La función len() reporta la longitud del diccionario como 6.
