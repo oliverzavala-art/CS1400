@@ -17,9 +17,8 @@ comidas = ["tacos", "pizza", "hamburguesa"]
 
 # Mostrar datos
 
-print(mensaje)
+print(mensaje.upper())
 print(comidas[0])
-
 """
 Análisis inicial:
 1. Ejecuta el código. ¿Cómo se muestra el texto de la variable mensaje en la consola?
