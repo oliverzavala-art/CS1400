@@ -51,12 +51,8 @@ print(mensaje.upper())
 
 # 5. Modifica la lista comidas para que incluya tres de tus alimentos favoritos reales y vuelve a imprimir únicamente la segunda opción.
 # Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
-comidas.clear()
-
-comidas.insert(1, "sushi")
-comidas.insert(2, "pupusas")
-comidas.insert(3, "panes con pollo")
-print(comidas[0:3])
+comidas = ["sushi", "pupusas", "panes con pollo"]
+print(comidas[1])
 
 #6.¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
 # Respuesta: clear()
@@ -75,8 +71,8 @@ print(comidas[0:3])
 # DESAFÍO DE CÓDIGO 1:
 
 #Python
-#playerNames = ["Adam", "Bethanie", "Carrie", "Doug", "Eddie"]
-#playerNumbers = [5, 2, 6, 13, 0]
+playerNames = ["Adam", "Bethanie", "Carrie", "Doug", "Eddie"]
+playerNumbers = [5, 2, 6, 13, 0]
 
 # 1. Adam ha dejado el equipo. Use 'remove' para eliminarlo:
 
@@ -146,7 +142,6 @@ print(comidas[0:3])
 #¿Para qué sirve un print() vacío que se coloca al final de un bucle que imprime una matriz? RESPUESTA: __________
 
 #Elegir un tipo de presentación
-
 
 
 
