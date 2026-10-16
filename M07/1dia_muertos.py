@@ -24,8 +24,10 @@ ofrendas.append("Incienso copal")  # Agregar un nuevo elemento a la lista
 ofrendas.sort()  # Ordenar la lista alfabéticamente
 
 #2. Modificación 2 (Tuplas): Intenta modificar el primer elemento de la tupla escribiendo
-NIVELES_ALTAR[0] = "Gloria".
+NIVELES_ALTAR[0] = "Gloria"
  #¿Qué sucede al ejecutar el código y por qué no permite realizar este cambio?
+#respuesta: Al ejecutar el código, se genera un error de tipo "TypeError" 
+# indicando que las tuplas no permiten la asignación de elementos. Esto sucede porque las tuplas son estructuras de datos inmutables.
 
 #3. Utiliza la función enumerate() dentro de un bucle for para imprimir cada ofrenda
  #de tu lista junto co su número de posición en el altar.
