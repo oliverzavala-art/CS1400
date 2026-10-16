@@ -32,7 +32,7 @@ Respuesta: Se muestra  el mesaje "bienvenido al curso de python" en minúsculas 
 Aplica el método .upper() a la variable mensaje para transformarla a mayúsculas. Puedes hacerlo directamente en el print() o asignándolo a una nueva variable:
 
 """
-"""
+
 print(mensaje.upper())
 
 #Python
@@ -54,7 +54,8 @@ print(mensaje.upper())
 # Observa las opciones y complete las definiciones. Métodos disponibles: insert, append, remove, pop y clear.
 comidas = ["sushi", "pupusas", "panes con pollo"]
 print(comidas[1])
-"""
+
+
 #6.¿Qué método elimina todos los elementos de la lista? RESPUESTA: __________
 # Respuesta: clear()
 
@@ -131,40 +132,58 @@ def Even_Numbers(lista_origen):
     even = []
 
     # TODO: Itere la lista_origen y agregue a 'even' solo los números pares
-    for num in lista_origen:
-        if num%2 == 0:
-            even.append(num)
+    for numero in lista_origen:
+        if numero % 2 == 0:
+            even.append(numero)
+
     return even
 
-#def Ten_Or_Less(lista_origen):
-    # TODO: Cree una lista vacía, busque valores <= 10 y devuélvala
-   # pass
 
-#def Calcular_Diferencias(lista_origen):
+def Ten_Or_Less(lista_origen):
+    # TODO: Cree una lista vacía, busque valores <= 10 y devuélvala
+    ten_or_less = []
+    for numero in lista_origen:
+        if numero <= 10:
+            ten_or_less.append(numero)  
+    return ten_or_less
+            
+pass
+
+def Calcular_Diferencias(lista_origen):
+
     # TODO: Calcule la distancia entre números consecutivos
     # Ejemplo: [10, 7, 15] -> [3, 8]
-    #pass
-#Listas 2D (2D Lists)
-#DESAFÍO DE CÓDIGO 3:
+ def calcular_diferencias(lista_origen):
+    return{abs(lista_origen[i +1] -  lista_origen[i ]) for i in range(len(lista_origen) - 1)}
+
+
+pass
+# Listas 2D (2D Lists)
+
+ #DESAFÍO DE CÓDIGO 3:
 
 #Observa la siguiente matriz 2D que representa un tablero de Tic-Tac-Toe:
 
+
 #Python
-#tictactoe = [
- #   ["X", "X", "X"],
-  #  ["-", "O", "-"],
-   # ["O", "-", "-"]
-#]
+tictactoe = [
+    ["X", "X", "X"],
+    ["-", "O", "-"],
+    ["O", "-", "-"]
+]
 
 # Escriba el 'if' para detectar si la fila superior (índice 0) tiene tres "X":
+if tictactoe[0] == ["X", "X", "X"]:
+    print("¡Ganó X!")
+
+
 # Pista: Debe revisar las posiciones [0][0], [0][1] y [0][2]
-#¿Qué valor devolvería la instrucción tictactoe[1][1] en el tablero anterior? RESPUESTA: __________
 
-#¿Para qué sirve un print() vacío que se coloca al final de un bucle que imprime una matriz? RESPUESTA: __________
+#14.¿Qué valor devolvería la instrucción tictactoe[1][1] en el tablero anterior? RESPUESTA: __________
+#tictactoe[1][1] devolvería "O" ya que es el valor que se encuentra en la segunda fila y segunda columna de la matriz.
 
-#Elegir un tipo de presentación
-
-
-
+#15. ¿Para qué sirve un print() vacío que se coloca al final de un bucle que imprime una matriz? RESPUESTA: 
+# Respuesta: Sirve para agregar un salto de línea al final de la impresión, mejorando la legibilidad del output.
 
 
+#Elegir un tipo de presentación.
