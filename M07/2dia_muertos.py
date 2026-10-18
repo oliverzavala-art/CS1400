@@ -41,3 +41,4 @@ print("Flores únicas recibidas:", flores_recibidas)
 #7. Reflexión: ¿Cuántos elementos tenía la lista original de flores y cuántos quedaron
  #en el conjunto? ¿Por qué los conjuntos (sets) son ideales para la limpieza de datos?
 #respuesta: La lista original de flores tenía 6 elementos, mientras que el conjunto resultante tiene 3 elementos únicos. 
+# Los conjuntos son ideales para la limpieza de datos porque eliminan automáticamente los duplicados.
