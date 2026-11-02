@@ -203,11 +203,12 @@ def calculadora_segura():
             print(f"❌ Error no esperado: {e}")
         
         finally:
-            # TODO 5: Muestra siempre un mensaje de cierre de intento
-            pass
+            # TODO 5: Muestra siempre un mensaje de cierre de intento.
+            print(" Fin del intento de cálculo.")
 """
 calculadora_segura()
 Preguntas de Reflexión
+
 ¿Cuál es el propósito de la instrucción break colocada al final de la sección try?
 Si el usuario ingresa n2 = 0 y op = '/', ¿se llega a ejecutar la línea print(f"✅ Resultado: {resultado}")? Explica la secuencia del flujo de ejecución.
 ¿Qué sucedería con la experiencia de usuario si omitimos el bucle while True en este programa?
