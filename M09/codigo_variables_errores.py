@@ -158,19 +158,23 @@ Código Base
 Copia este fragmento en tu editor y completa los bloques señalados con # TODO:
 """
 
+class OperadorInvalidoError(ValueError):
+    pass
+
+
 def calculadora_segura():
     print("\n--- Calculadora Robusta ---")
     
     while True:
         try:
             n1 = float(input("Ingresa el primer número: "))
+            op = input("Operación (+, -, *, /): ") 
             n2 = float(input("Ingresa el segundo número: "))
-            op = input("Operación (+, -, *, /): ")
-
+         
             # Validar operador permitido
             if op not in ['+', '-', '*', '/']:
                 # TODO 1: Lanza (raise) un ValueError con el mensaje "Operador no válido"
-                raise ValueError("Operador no válido")
+                raise OperadorInvalidoError("Operador no válido")
 
             # Realizar cálculos
             if op == '+':
@@ -187,6 +191,10 @@ def calculadora_segura():
 
         # --- MANEJO DE EXCEPCIONES ---
 
+        # TODO 4: Captura el ValueError (generado por el operador inválido) y muestra e
+        except OperadorInvalidoError as e:
+            print(f"❌ Error de entrada: {e}")
+
         # TODO 2: Captura el error de formato cuando el usuario ingresa texto en lugar de números
         except ValueError:
             print("❌ Error: Ingrese valores numéricos válidos.")
@@ -194,10 +202,6 @@ def calculadora_segura():
         # TODO 3: Captura la división por cero
         except ZeroDivisionError:
             print("❌ Error: No se puede dividir entre cero.")
-
-        # TODO 4: Captura el ValueError (generado por el operador inválido) y muestra e
-        except ValueError as e:
-            print(f"❌ Error de entrada: {e}")
 
         except Exception as e:
             print(f"❌ Error no esperado: {e}")
@@ -209,9 +213,17 @@ def calculadora_segura():
 calculadora_segura()
 Preguntas de Reflexión
 
-¿Cuál es el propósito de la instrucción break colocada al final de la sección try?
-Si el usuario ingresa n2 = 0 y op = '/', ¿se llega a ejecutar la línea print(f"✅ Resultado: {resultado}")? Explica la secuencia del flujo de ejecución.
-¿Qué sucedería con la experiencia de usuario si omitimos el bucle while True en este programa?
+14-¿Cuál es el propósito de la instrucción break colocada al final de la sección try?
+respuesta: La instrucción break se utiliza para salir del bucle while True una vez que el cálculo se realiza con éxito.
+ Es decir, el programa se detiene después de mostrar el resultado, en lugar de continuar pidiendo entradas indefinidamente.
+
+15-Si el usuario ingresa n2 = 0 y op = '/', ¿se llega a ejecutar la línea print(f"✅ Resultado: {resultado}")? Explica la secuencia del flujo de ejecución.
+respuesta: No, no se llega a ejecutar la línea print(f"✅ Resultado: {resultado}") porque la división entre cero genera una excepción 
+ZeroDivisionError, mostrando un mensaje de error en su lugar.
+
+16-¿Qué sucedería con la experiencia de usuario si omitimos el bucle while True en este programa?
+respuesta: Si se omite el bucle while True, la calculadora solo permitiría realizar un cálculo por ejecución del programa. El usuario tendría que ejecutar el programa nuevamente para realizar otro cálculo, lo cual resultaría menos conveniente y menos interactivo.
+
 Criterios de Entrega
 Documento con las respuestas numéricas a todas las preguntas (1 a 16).
 Capturas de pantalla ejecutando la calculadora en tres casos:
@@ -221,3 +233,5 @@ Cálculo exitoso.
 Código fuente completo de la calculadora_segura() resuelta y funcional.
 Elegir un tipo de presentación
 """
+
+calculadora_segura()
