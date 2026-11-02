@@ -69,3 +69,5 @@
 ¿Puedes leer un código corto y decir qué mensaje va a mostrar en pantalla?
 ¿Puedes encontrar el error en un código que tiene un problema? (falta de :, sangría incorrecta, = en vez de ==)
 ¿Puedes leer las instrucciones con cuidado y seguirlas paso a paso?
+ 
+ 

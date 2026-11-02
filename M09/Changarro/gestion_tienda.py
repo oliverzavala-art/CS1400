@@ -12,7 +12,8 @@
 
 def agregar_producto(inventario, nombre, precio):
     """
-   
+   La funcion 'def' dice que ba a crear un archivo agregar_producto y dentro delos parentesis es un diccionario 
+   que contiene, inventario ,nombre y precio
     """
     try:
         # Convertimos a float para asegurar que sea un número
@@ -25,6 +26,7 @@ def agregar_producto(inventario, nombre, precio):
 
 def buscar_precio(inventario, nombre):
     """
+    
     """
     # Usamos .get() para evitar que el programa falle si la llave no existe
     return inventario.get(nombre, None)
