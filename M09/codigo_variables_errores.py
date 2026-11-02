@@ -188,16 +188,16 @@ def calculadora_segura():
         # --- MANEJO DE EXCEPCIONES ---
 
         # TODO 2: Captura el error de formato cuando el usuario ingresa texto en lugar de números
-        # except ...:
-        #     print("❌ Error: Ingrese valores numéricos válidos.")
+        except ValueError:
+            print("❌ Error: Ingrese valores numéricos válidos.")
 
         # TODO 3: Captura la división por cero
-        # except ...:
-        #     print("❌ Error: No se puede dividir entre cero.")
+        except ZeroDivisionError:
+            print("❌ Error: No se puede dividir entre cero.")
 
         # TODO 4: Captura el ValueError (generado por el operador inválido) y muestra e
-        # except ValueError as e:
-        #     print(f"❌ Error de entrada: {e}")
+        except ValueError as e:
+            print(f"❌ Error de entrada: {e}")
 
         except Exception as e:
             print(f"❌ Error no esperado: {e}")
