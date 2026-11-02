@@ -95,6 +95,7 @@ A. Diagnóstico técnico con traceback
 
 A veces necesitamos registrar el detalle técnico del error para los desarrolladores sin detener la aplicación.
 """
+"""
 import traceback
 
 try:
@@ -107,6 +108,7 @@ except ValueError as e:
 
 print("El programa continúa...")
 """
+"""
 9- En la línea except ValueError as e, ¿qué representa la variable e?
 respuesta: La variable e representa la excepción ValueError que se capturó, incluyendo información detallada sobre el error.
 
@@ -117,6 +119,7 @@ respuesta: La función traceback.format_tb() permite obtener el detalle técnico
 B. Validación explícita con raise y garantía con finally
 
 Podemos forzar la creación de nuestras propias excepciones usando raise cuando un dato no cumple con nuestras reglas de negocio, y asegurar la ejecución de código final con finally.
+"""
 """
 print("--- Validación de Rango ---")
 num = 0
@@ -137,19 +140,24 @@ while num < 1 or num > 10:
 
 print(f"¡Número válido ingresado con éxito! ({num})")
 """
+"""
 11- ¿En qué situaciones se ejecutará el código dentro del bloque finally?
 respuesta: El código dentro del bloque finally se ejecutará siempre, independientemente de si se produjo un error o no, garantizando que ciertas acciones se realicen al final de la operación.
 
 12- ¿Qué función cumple la palabra clave raise en el condicional if num < 1 or num > 10?
 respuesta: La palabra clave raise se utiliza para lanzar explícitamente una excepción cuando el número ingresado está fuera del rango permitido, permitiendo un control de errores más preciso.
+
 13- ¿Qué ocurre en el bucle while cuando el usuario ingresa un valor válido (ejemplo: 5)?
 respuesta: Cuando el usuario ingresa un valor válido, la condición del bucle while se cumple (num >= 1 y num <= 10), por lo que el bucle termina y se imprime el mensaje de éxito.
+
 Parte 4: Aplicación Práctica — Calculadora Robusta
+
 Completa el motor de la calculadora interactiva. Debe mantenerse en ejecución continua pidiendo datos hasta que el cálculo se complete correctamente sin ningún error.
 
 Código Base
 Copia este fragmento en tu editor y completa los bloques señalados con # TODO:
 """
+
 def calculadora_segura():
     print("\n--- Calculadora Robusta ---")
     
@@ -162,7 +170,7 @@ def calculadora_segura():
             # Validar operador permitido
             if op not in ['+', '-', '*', '/']:
                 # TODO 1: Lanza (raise) un ValueError con el mensaje "Operador no válido"
-                pass
+                raise ValueError("Operador no válido")
 
             # Realizar cálculos
             if op == '+':
@@ -180,10 +188,16 @@ def calculadora_segura():
         # --- MANEJO DE EXCEPCIONES ---
 
         # TODO 2: Captura el error de formato cuando el usuario ingresa texto en lugar de números
+        except ValueError: 
+            
+            print("❌ Error: Ingrese valores numéricos válidos.")
         # except ...:
         #     print("❌ Error: Ingrese valores numéricos válidos.")
 
         # TODO 3: Captura la división por cero
+        except ZeroDivisionError:
+            print("❌ Error: No se puede dividir entre cero.")
+
         # except ...:
         #     print("❌ Error: No se puede dividir entre cero.")
 
