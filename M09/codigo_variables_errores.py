@@ -23,13 +23,16 @@ a-¿Por qué la Operación 1 (10 / num) fallará si el usuario ingresa 0?
 respuesta: La operación fallará porque no es posible dividir entre cero.
 b-¿Por qué la Operación 2 (lst[num]) fallará si el usuario ingresa 100?
 respuesta: La operación fallará porque el índice 100 está fuera del rango de la lista lst.
-Ejecución y pruebas: Ejecuta el programa tres veces con las entradas indicadas y completa la siguiente tabla de resultados:
+
+2-Ejecución y pruebas: Ejecuta el programa tres veces con las entradas indicadas y completa la siguiente tabla de resultados:
 Entrada del usuario	¿Llegó a imprimirse "El programa continuó..."? (Sí/No)	Nombre exacto de la excepción generada en consola
 "dos"	respuesta 	No		ValueError
 0	No	respuesta ZeroDivisionError
 100	No		respuesta IndexError
 
-¿Qué ocurre con la ejecución de las líneas de código subsiguientes cuando Python encuentra un error no capturado en una línea previa?
+3-¿Qué ocurre con la ejecución de las líneas de código subsiguientes cuando Python encuentra un error no capturado en una línea previa?
+respuesta: La ejecución de las líneas de código subsiguientes se detiene y el programa termina abruptamente.
+
 Parte 2: Control de Flujo con try / except
 Para evitar que el programa se detenga, envolvemos el código propenso a errores dentro de un bloque try y capturamos las fallas con except.
 """
