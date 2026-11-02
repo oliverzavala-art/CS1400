@@ -3,6 +3,7 @@
 Parte 1: Código Vulnerable a Errores
 Observa y analiza el siguiente segmento de código antes de ejecutarlo:
 """
+"""
 lst = [1, 3, 7, 3]
 
 # Entrada de datos
@@ -16,7 +17,7 @@ print(lst[num])
 
 # Operación 3: Continuación
 print("El programa continuó con éxito.")
-"""
+
 Preguntas
 1-Analiza las operaciones antes de ejecutar:
 a-¿Por qué la Operación 1 (10 / num) fallará si el usuario ingresa 0?
@@ -25,16 +26,20 @@ b-¿Por qué la Operación 2 (lst[num]) fallará si el usuario ingresa 100?
 respuesta: La operación fallará porque el índice 100 está fuera del rango de la lista lst.
 
 2-Ejecución y pruebas: Ejecuta el programa tres veces con las entradas indicadas y completa la siguiente tabla de resultados:
-Entrada del usuario	¿Llegó a imprimirse "El programa continuó..."? (Sí/No)	Nombre exacto de la excepción generada en consola
-"dos"	respuesta 	No		ValueError
-0	No	respuesta ZeroDivisionError
-100	No		respuesta IndexError
+Entrada del usuario	¿Llegó a imprimirse "El programa continuó..."? (Sí/No)	
+respuesta: sí
+
+Nombre exacto de la excepción generada en consola
+"dos"	respuesta No		ValueError
+0	    respuesta No    ZeroDivisionError
+100	    respuesta No	IndexError
 
 3-¿Qué ocurre con la ejecución de las líneas de código subsiguientes cuando Python encuentra un error no capturado en una línea previa?
 respuesta: La ejecución de las líneas de código subsiguientes se detiene y el programa termina abruptamente.
 
 Parte 2: Control de Flujo con try / except
 Para evitar que el programa se detenga, envolvemos el código propenso a errores dentro de un bloque try y capturamos las fallas con except.
+"""
 """
 try:
     lst = [1, 3, 7, 3]
@@ -50,14 +55,44 @@ except:
 
 print("El programa continúa su ejecución normal...")
 """
+"""
 Preguntas y Modificaciones
-Ejecuta el código anterior e ingresa "dos". ¿Qué mensaje se imprime? ¿Se ejecuta la última línea de "El programa continúa..."?
-Ejecuta el código e ingresa 0. ¿Por qué se activa el mensaje "Ocurrió un error general" en lugar del de ValueError?
-Modificación de código 1: Agrega un bloque except ZeroDivisionError específico con el mensaje: "❌ Error: No es posible dividir entre cero."
-Modificación de código 2: Identifica el tipo de error que ocurre al intentar acceder a un índice inexistente en la lista lst (al ingresar 100). Agrega un bloque except específico para capturar dicho error con un mensaje descriptivo.
-Pega tu código corregido con las 3 excepciones específicas aquí.
+4-Ejecuta el código anterior e ingresa "dos". ¿Qué mensaje se imprime? ¿Se ejecuta la última línea de "El programa continúa..."?
+respuesta: Se imprime "❌ Error: Debes ingresar un número entero válido (sin letras)." y sí se ejecuta la última línea de "El programa continúa su ejecución normal...".
+
+5-Ejecuta el código e ingresa 0. ¿Por qué se activa el mensaje "Ocurrió un error general" en lugar del de ValueError?
+respuesta: Se activa el mensaje "Ocurrió un error general" 
+
+6-Modificación de código 1: Agrega un bloque except ZeroDivisionError específico con el mensaje: "❌ Error: No es posible dividir entre cero."
+
+7-Modificación de código 2: Identifica el tipo de error que ocurre al intentar acceder a un índice inexistente en la lista lst (al ingresar 100). Agrega un bloque except específico para capturar dicho error con un mensaje descriptivo.
+
+8-Pega tu código corregido con las 3 excepciones específicas aquí.
+"""
+"""
+try:
+    lst = [1, 3, 7, 3]
+    num = int(input("Ingrese un número entero: "))
+    
+    print(10 / num)
+    print(lst[num])
+
+except ValueError:
+    print("❌ Error: Debes ingresar un número entero válido (sin letras).")
+except ZeroDivisionError:
+    print("❌ Error: No es posible dividir entre cero.")
+except IndexError:
+    print("❌ Error: Índice fuera del rango de la lista.")
+except:
+    print("❌ Ocurrió un error general.")
+
+print("El programa continúa su ejecución normal...")
+"""
+"""
 Parte 3: Rastrear Errores con traceback y Controlar raise / finally
+
 A. Diagnóstico técnico con traceback
+
 A veces necesitamos registrar el detalle técnico del error para los desarrolladores sin detener la aplicación.
 """
 import traceback
@@ -72,9 +107,15 @@ except ValueError as e:
 
 print("El programa continúa...")
 """
-En la línea except ValueError as e, ¿qué representa la variable e?
-¿Qué ventaja ofrece la función traceback.format_tb() frente a simplemente mostrar un mensaje amigable al usuario?
+9- En la línea except ValueError as e, ¿qué representa la variable e?
+respuesta: La variable e representa la excepción ValueError que se capturó, incluyendo información detallada sobre el error.
+
+10-¿Qué ventaja ofrece la función traceback.format_tb() frente a simplemente mostrar un mensaje amigable al usuario?
+respuesta: La función traceback.format_tb() permite obtener el detalle técnico del error, incluyendo la traza de la pila de llamadas,
+ lo cual es útil para los desarrolladores al depurar el código, mientras que un mensaje amigable solo informa al usuario de que ocurrió un error sin proporcionar información técnica.
+
 B. Validación explícita con raise y garantía con finally
+
 Podemos forzar la creación de nuestras propias excepciones usando raise cuando un dato no cumple con nuestras reglas de negocio, y asegurar la ejecución de código final con finally.
 """
 print("--- Validación de Rango ---")
@@ -96,9 +137,13 @@ while num < 1 or num > 10:
 
 print(f"¡Número válido ingresado con éxito! ({num})")
 """
-¿En qué situaciones se ejecutará el código dentro del bloque finally?
-¿Qué función cumple la palabra clave raise en el condicional if num < 1 or num > 10?
-¿Qué ocurre en el bucle while cuando el usuario ingresa un valor válido (ejemplo: 5)?
+11- ¿En qué situaciones se ejecutará el código dentro del bloque finally?
+respuesta: El código dentro del bloque finally se ejecutará siempre, independientemente de si se produjo un error o no, garantizando que ciertas acciones se realicen al final de la operación.
+
+12- ¿Qué función cumple la palabra clave raise en el condicional if num < 1 or num > 10?
+respuesta: La palabra clave raise se utiliza para lanzar explícitamente una excepción cuando el número ingresado está fuera del rango permitido, permitiendo un control de errores más preciso.
+13- ¿Qué ocurre en el bucle while cuando el usuario ingresa un valor válido (ejemplo: 5)?
+respuesta: Cuando el usuario ingresa un valor válido, la condición del bucle while se cumple (num >= 1 y num <= 10), por lo que el bucle termina y se imprime el mensaje de éxito.
 Parte 4: Aplicación Práctica — Calculadora Robusta
 Completa el motor de la calculadora interactiva. Debe mantenerse en ejecución continua pidiendo datos hasta que el cálculo se complete correctamente sin ningún error.
 
