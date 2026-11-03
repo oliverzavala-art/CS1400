@@ -26,14 +26,16 @@ def agregar_producto(inventario, nombre, precio):
 
 def buscar_precio(inventario, nombre):
     """
-    
+    # Busca el precio de un producto en el inventario.
+    # Si el producto no existe, devuelve None.
     """
     # Usamos .get() para evitar que el programa falle si la llave no existe
     return inventario.get(nombre, None)
 
 def listar_productos(inventario):
     """
-   
+    # Lista todos los productos en el inventario.
+    # Si el inventario está vacío, imprime un mensaje correspondiente.
     """
     if not inventario:
         print("\n> El inventario está vacío.")
