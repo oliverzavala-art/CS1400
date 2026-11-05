@@ -48,12 +48,25 @@ except:
     """
 Preguntas de Comprensión (Parte 1)
 ¿Cómo se llama el archivo .txt que se crea en este programa?
+Respuesta: El archivo se llama "roster.txt".
+
 ¿Qué objeto de Python se utiliza para leer el archivo?
+Respuesta: El objeto de Python utilizado para leer el archivo es `open()`.
+
 ¿Cuál es el propósito del bucle while al leer el archivo?
+Respuesta: El propósito del bucle while es recorrer cada línea del archivo y agregarla a la lista `roster`.
+
 ¿Qué sucede con los datos a medida que se leen del archivo?
+Respuesta: Los datos se almacenan en la lista `roster`.
+
 ¿Qué representa la variable n?
+Respuesta: La variable n representa cada nombre en la lista `roster`.
+
 ¿Qué debe hacerse siempre con un archivo después de terminar de acceder a él?
+Respuesta: Se debe cerrar el archivo utilizando el método `close()`.
+
 Parte 2: Formato JSON
+
 JSON es el estándar para guardar objetos complejos como diccionarios.
 
 Permite guardar listas anidadas.
