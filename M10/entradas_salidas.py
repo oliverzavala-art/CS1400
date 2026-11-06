@@ -7,6 +7,7 @@
 roster = []
 
 # Cargar la lista desde el archivo
+"""
 try:
     archivoRoster = open('roster.txt', 'r')
     for line in archivoRoster:
@@ -45,7 +46,7 @@ try:
     archivoRoster.close()
 except:
     print('Error al escribir.')
-    """
+    
 Preguntas de Comprensión (Parte 1)
 ¿Cómo se llama el archivo .txt que se crea en este programa?
 Respuesta: El archivo se llama "roster.txt".
@@ -88,7 +89,11 @@ with open('datos.json', 'w') as f:
 with open('datos.json', 'r') as f:
     datos = json.load(f)
     print(f"Usuario: {datos['nombre']}")
+
+
 # Preguntas Finales
 # 7. ¿Qué hace la función json.dump()?
+# Respuesta: La función json.dump() se utiliza para escribir un objeto de Python en un archivo en formato JSON.
 
 # 8. ¿Cuál es la ventaja de usar with open(...) en lugar de .close()?
+# Respuesta: La ventaja de usar with open(...) es que el archivo se cierra automáticamente al salir del bloque with, incluso si ocurre un error.
