@@ -90,7 +90,9 @@ with open('datos.json', 'w') as f:
 with open('datos.json', 'r') as f:
     datos = json.load(f)
     print(f"Usuario: {datos['nombre']}")
-with open('datos.json', 'w') as f:
+
+
+
 
 # Preguntas Finales
 # 7. ¿Qué hace la función json.dump()?
