@@ -1,4 +1,4 @@
-#mi nombre es: Oliver Zavala
+# nombre : Oliver Zavala
 
 #nombre de archivo: entradas_salidas.py
 #objetivo: aprender a leer y escribir archivos de texto
@@ -71,6 +71,7 @@ JSON es el estándar para guardar objetos complejos como diccionarios.
 
 Permite guardar listas anidadas.
 Es el estándar de internet.
+"""
 import json
 
 usuario = {
@@ -87,8 +88,7 @@ with open('datos.json', 'w') as f:
 with open('datos.json', 'r') as f:
     datos = json.load(f)
     print(f"Usuario: {datos['nombre']}")
-Preguntas Finales
-7. ¿Qué hace la función json.dump()?
+# Preguntas Finales
+# 7. ¿Qué hace la función json.dump()?
 
-8. ¿Cuál es la ventaja de usar with open(...) en lugar de .close()?
-"""
+# 8. ¿Cuál es la ventaja de usar with open(...) en lugar de .close()?
