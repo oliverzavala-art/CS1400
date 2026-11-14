@@ -9,8 +9,9 @@ Este programa tiene tres partes:
   PARTE 2: (Extra) Consumir una API que devuelve JSON
   
 Como ejecutarlo:
-    python entrada_salida.py
 """
+#python entrada_salida.py
+
 
 # ----------------------------------------------------------
 # IMPORTACIONES
@@ -26,7 +27,8 @@ import urllib.error         # Para capturar errores de red
 # ==========================================================
 # Un diccionario guarda parejas "clave: valor".
 # Aqui la clave es el refran y el valor es lo que significa.
-# TODO 1:  Agregar al menos un refran de tu familia: solo copia el formato.
+# Refranes de la familia: agregamos uno con el mismo formato para personalizar el ejemplo.
+
 REFRANES = {
     "Haz el bien y no mires a quien.":
         "Ayuda a los demas sin esperar nada a cambio.",
@@ -39,6 +41,12 @@ REFRANES = {
 
     "Agua que no has de beber, dejala correr.":
         "Si algo no te conviene o no te toca, no te metas.",
+
+    "Mas vale tarde que nunca.":
+        "Es mejor hacer algo tarde que no nunca hacerlo.",
+
+    "En casa de herrero, cuchillo de palo.":
+        "Cada quien suele criticar o burlarse de lo que otros hacen, aunque en su propio hogar hace lo mismo.",
 }
 
 
@@ -88,27 +96,32 @@ def parte_uno_entrada_salida():
 
     # TODO ¿Qué hace este bloque try/except ValueError?
     # ¿Qué pasaría si el usuario escribe “veinte” y quitamos ese bloque?
+# respuesta si el usuario escribe “veinte” y quitamos ese bloque, el programa se rompería con un error ValueError,
+#  porque no se puede convertir la cadena "veinte" a un entero.
 
     try:
-        edad = int(input("Cuantos anos tienes? "))
+        edad = int(input("¿Cuantos años tienes? "))
     except ValueError:
         print("Eso no parece un numero. Usare 0 como edad.")
         edad = 0
 
-    comida = input("Cual es tu comida favorita? ")
+    comida = input("¿Cual es tu comida favorita? ")
 
     # ------------------------------------------------------
     # SALIDA: mostramos los datos de varias formas distintas
     # ------------------------------------------------------
     print()
-    print(f"Mucho gusto, {nombre}!")                 # f-string
+    print(f"Mucho gusto, {nombre}!")                 # f-string +
     
     # TODO ¿Como usamos acentos en espanol, otra vez?
-    print("Tienes", edad, "anos.")                   # comas
-    print("Tu comida favorita es " + comida + ".")   # concatenacion con +
+    # Para usar acentos en español, debemos asegurarnos de que el archivo de código fuente esté guardado 
+    # con codificación UTF-8 y declarar la codificación al inicio del archivo con la línea `
+    # # -*- coding: utf-8 -*-`. Esto permite que los caracteres acentuados se muestren correctamente en las cadenas de texto.
+    print("Tienes", edad, "años.")                   # comas
+    print("Tu comida favorita es " + comida + ".")   # concatenacion con 
 
-    anos_para_100 = 100 - edad
-    print(f"Te faltan {anos_para_100} anos para cumplir 100.")
+    años_para_100 = 100 - edad
+    print(f"Te faltan {años_para_100} años  para cumplir 100.")
 
     # ------------------------------------------------------
     # DECISIONES (if / elif / else): la abuela opina segun la edad
@@ -131,6 +144,8 @@ def parte_uno_entrada_salida():
 # PARTE 2 (EXTRA- si tienes tiempo): CONSUMIR UNA API JSON
 # ==========================================================
 #TODO ¿Que hace este api?
+#respuesta  este api devuelve datos de usuarios falsos para pruebas, en formato JSON.
+
 def parte_dos_api_json(nombre):
     """Consulta una API publica que responde en formato JSON."""
 
